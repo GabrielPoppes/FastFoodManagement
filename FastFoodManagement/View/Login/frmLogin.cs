@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FastFoodManagement.View.SystemOptions;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -31,9 +32,20 @@ namespace FastFoodManagement.View.Login
         }
         #endregion
 
+        #region Evento textchanged para trocar o texto digitado em senha por asterisco
         private void txbPassword_TextChanged(object sender, EventArgs e)
         {
             txbPassword.PasswordChar = '*';
         }
+        #endregion
+
+        #region Botão entrar (abrindo a tela de opções após clicar em entrar)
+        private void btnEntrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            frmSystemOptions frmOptions = new frmSystemOptions();
+            frmOptions.Show();
+        }
+        #endregion
     }
 }

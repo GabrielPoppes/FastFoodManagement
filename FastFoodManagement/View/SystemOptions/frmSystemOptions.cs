@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FastFoodManagement.View.BoxService;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,13 @@ namespace FastFoodManagement.View.SystemOptions
         public frmSystemOptions()
         {
             InitializeComponent();
+        }
+
+        private void btnCaixa_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            frmMain frmCaixa = new frmMain();
+            frmCaixa.Show();
         }
     }
 }
