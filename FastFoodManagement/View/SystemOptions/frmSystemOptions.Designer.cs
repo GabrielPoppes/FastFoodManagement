@@ -32,12 +32,15 @@ namespace FastFoodManagement.View.SystemOptions
             this.panelfrmSystemOptions = new System.Windows.Forms.Panel();
             this.btnCaixa = new System.Windows.Forms.Button();
             this.btnPedidos = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelfrmSystemOptions.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelfrmSystemOptions
             // 
             this.panelfrmSystemOptions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(13)))), ((int)(((byte)(19)))));
+            this.panelfrmSystemOptions.Controls.Add(this.pictureBox1);
             this.panelfrmSystemOptions.Controls.Add(this.btnCaixa);
             this.panelfrmSystemOptions.Controls.Add(this.btnPedidos);
             this.panelfrmSystemOptions.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -51,11 +54,11 @@ namespace FastFoodManagement.View.SystemOptions
             // 
             this.btnCaixa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
             this.btnCaixa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCaixa.Font = new System.Drawing.Font("Microsoft YaHei UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCaixa.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCaixa.ForeColor = System.Drawing.Color.White;
-            this.btnCaixa.Location = new System.Drawing.Point(138, 132);
+            this.btnCaixa.Location = new System.Drawing.Point(201, 194);
             this.btnCaixa.Name = "btnCaixa";
-            this.btnCaixa.Size = new System.Drawing.Size(187, 93);
+            this.btnCaixa.Size = new System.Drawing.Size(123, 58);
             this.btnCaixa.TabIndex = 1;
             this.btnCaixa.Text = "Caixa";
             this.btnCaixa.UseVisualStyleBackColor = false;
@@ -64,14 +67,25 @@ namespace FastFoodManagement.View.SystemOptions
             // 
             this.btnPedidos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
             this.btnPedidos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPedidos.Font = new System.Drawing.Font("Microsoft YaHei UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPedidos.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPedidos.ForeColor = System.Drawing.Color.White;
-            this.btnPedidos.Location = new System.Drawing.Point(367, 132);
+            this.btnPedidos.Location = new System.Drawing.Point(370, 194);
             this.btnPedidos.Name = "btnPedidos";
-            this.btnPedidos.Size = new System.Drawing.Size(187, 93);
+            this.btnPedidos.Size = new System.Drawing.Size(123, 58);
             this.btnPedidos.TabIndex = 0;
             this.btnPedidos.Text = "Pedidos";
             this.btnPedidos.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::FastFoodManagement.Properties.Resources.GERENCIADORLOGO;
+            this.pictureBox1.Location = new System.Drawing.Point(166, 79);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(369, 82);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
             // 
             // frmSystemOptions
             // 
@@ -84,6 +98,7 @@ namespace FastFoodManagement.View.SystemOptions
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Opções de setores";
             this.panelfrmSystemOptions.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -93,5 +108,6 @@ namespace FastFoodManagement.View.SystemOptions
         private System.Windows.Forms.Panel panelfrmSystemOptions;
         private System.Windows.Forms.Button btnCaixa;
         private System.Windows.Forms.Button btnPedidos;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
