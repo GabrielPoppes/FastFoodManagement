@@ -47,5 +47,10 @@ namespace FastFoodManagement.View.Login
             frmOptions.Show();
         }
         #endregion
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

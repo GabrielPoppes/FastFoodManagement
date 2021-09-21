@@ -126,6 +126,7 @@ namespace FastFoodManagement.View.Login
             this.btnSair.TabIndex = 6;
             this.btnSair.Text = "SAIR";
             this.btnSair.UseVisualStyleBackColor = false;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // pictureBox3
             // 

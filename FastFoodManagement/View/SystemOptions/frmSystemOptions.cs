@@ -18,11 +18,13 @@ namespace FastFoodManagement.View.SystemOptions
             InitializeComponent();
         }
 
+        #region Ação click no botão Caixa
         private void btnCaixa_Click(object sender, EventArgs e)
         {
             this.Close();
             frmMain frmCaixa = new frmMain();
             frmCaixa.Show();
         }
+        #endregion
     }
 }
