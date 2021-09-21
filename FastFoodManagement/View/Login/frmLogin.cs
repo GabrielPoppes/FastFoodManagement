@@ -17,6 +17,7 @@ namespace FastFoodManagement.View.Login
         public frmLogin()
         {
             InitializeComponent();
+            HideButtonReturn(); // Esconder botão voltar
         }
 
         #region Evento click no text box e-mail (para sumir o text pré definido)
@@ -56,13 +57,68 @@ namespace FastFoodManagement.View.Login
         }
         #endregion
 
-        #region Botão cadastrar (evento click)
-        private void btnCadastrar_Click(object sender, EventArgs e)
+        #region Botão voltar (evento click)
+        private void btnVoltar_Click(object sender, EventArgs e)
         {
-            this.Close();
-            frmRegistration Registration = new frmRegistration();
-            Registration.Show();
+            HideButtonReturn();
+            ShowButtonExit();
+            openChildForm(new frmLogin());
         }
         #endregion
+
+        #region Botão cadastrar (evento click)
+        public void btnCadastrar_Click(object sender, EventArgs e)
+        {
+            HideButtonExit();
+            ShowButtonReturn();
+            openChildForm(new frmRegistration());
+        }
+        #endregion
+
+        #region Método para abrir o panel do Registro
+        public Form activeForm = null;
+        public void openChildForm(Form childForm)
+        {
+            if (activeForm != null)
+                activeForm.Close();
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panelMain.Controls.Add(childForm);
+            panelMain.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
+        #endregion
+
+        #region Método para Esconder botão VOLTAR
+        private void HideButtonReturn()
+        {
+            btnVoltar.Hide();
+        }
+        #endregion
+
+        #region Método para Mostrar botão VOLTAR
+        private void ShowButtonReturn()
+        {
+            btnVoltar.Show();
+        }
+        #endregion
+
+        #region Método para Mostrar botão SAIR
+        private void ShowButtonExit()
+        {
+            btnSair.Show();
+        }
+        #endregion
+
+        #region Método para Esconder botão SAIR
+        private void HideButtonExit()
+        {
+            btnSair.Hide();
+        }
+        #endregion
+
     }
 }

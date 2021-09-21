@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FastFoodManagement.View.Login;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -69,5 +70,15 @@ namespace FastFoodManagement.View.Registration
             txtBoxRepeatPassword.PasswordChar = '*';
         }
         #endregion
+
+        #region Botão voltar
+        public void btnVoltar_Click(object sender, EventArgs e)
+        {
+            frmLogin frm = new frmLogin();
+            frm.openChildForm(new frmLogin());
+        }
+        #endregion
+
+
     }
 }

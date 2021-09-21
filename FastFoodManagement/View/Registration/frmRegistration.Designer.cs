@@ -29,8 +29,6 @@ namespace FastFoodManagement.View.Registration
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnVoltar = new System.Windows.Forms.Button();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -42,31 +40,11 @@ namespace FastFoodManagement.View.Registration
             this.txtBoxCelular = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.txtBoxLembrete = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panelMain = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelMain.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::FastFoodManagement.Properties.Resources.logoLogin;
-            this.pictureBox1.Location = new System.Drawing.Point(163, 75);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(127, 88);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnVoltar
-            // 
-            this.btnVoltar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(74)))));
-            this.btnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVoltar.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVoltar.ForeColor = System.Drawing.Color.White;
-            this.btnVoltar.Location = new System.Drawing.Point(374, 455);
-            this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(68, 28);
-            this.btnVoltar.TabIndex = 16;
-            this.btnVoltar.Text = "VOLTAR";
-            this.btnVoltar.UseVisualStyleBackColor = false;
             // 
             // btnCadastrar
             // 
@@ -74,7 +52,7 @@ namespace FastFoodManagement.View.Registration
             this.btnCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCadastrar.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastrar.ForeColor = System.Drawing.Color.White;
-            this.btnCadastrar.Location = new System.Drawing.Point(173, 365);
+            this.btnCadastrar.Location = new System.Drawing.Point(145, 306);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(117, 30);
             this.btnCadastrar.TabIndex = 15;
@@ -84,7 +62,7 @@ namespace FastFoodManagement.View.Registration
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Location = new System.Drawing.Point(121, 268);
+            this.panel2.Location = new System.Drawing.Point(93, 219);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(218, 1);
             this.panel2.TabIndex = 13;
@@ -92,7 +70,7 @@ namespace FastFoodManagement.View.Registration
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(121, 209);
+            this.panel1.Location = new System.Drawing.Point(93, 160);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(218, 1);
             this.panel1.TabIndex = 12;
@@ -103,7 +81,7 @@ namespace FastFoodManagement.View.Registration
             this.txbPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txbPassword.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbPassword.ForeColor = System.Drawing.Color.White;
-            this.txbPassword.Location = new System.Drawing.Point(122, 247);
+            this.txbPassword.Location = new System.Drawing.Point(94, 198);
             this.txbPassword.Name = "txbPassword";
             this.txbPassword.Size = new System.Drawing.Size(182, 17);
             this.txbPassword.TabIndex = 11;
@@ -117,7 +95,7 @@ namespace FastFoodManagement.View.Registration
             this.txbEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txbEmail.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbEmail.ForeColor = System.Drawing.Color.White;
-            this.txbEmail.Location = new System.Drawing.Point(122, 188);
+            this.txbEmail.Location = new System.Drawing.Point(94, 139);
             this.txbEmail.Name = "txbEmail";
             this.txbEmail.Size = new System.Drawing.Size(182, 17);
             this.txbEmail.TabIndex = 10;
@@ -127,7 +105,7 @@ namespace FastFoodManagement.View.Registration
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Location = new System.Drawing.Point(121, 298);
+            this.panel3.Location = new System.Drawing.Point(93, 249);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(218, 1);
             this.panel3.TabIndex = 20;
@@ -138,7 +116,7 @@ namespace FastFoodManagement.View.Registration
             this.txtBoxRepeatPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtBoxRepeatPassword.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxRepeatPassword.ForeColor = System.Drawing.Color.White;
-            this.txtBoxRepeatPassword.Location = new System.Drawing.Point(122, 277);
+            this.txtBoxRepeatPassword.Location = new System.Drawing.Point(94, 228);
             this.txtBoxRepeatPassword.Name = "txtBoxRepeatPassword";
             this.txtBoxRepeatPassword.Size = new System.Drawing.Size(182, 17);
             this.txtBoxRepeatPassword.TabIndex = 19;
@@ -149,7 +127,7 @@ namespace FastFoodManagement.View.Registration
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Location = new System.Drawing.Point(121, 238);
+            this.panel4.Location = new System.Drawing.Point(93, 189);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(218, 1);
             this.panel4.TabIndex = 22;
@@ -160,7 +138,7 @@ namespace FastFoodManagement.View.Registration
             this.txtBoxCelular.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtBoxCelular.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxCelular.ForeColor = System.Drawing.Color.White;
-            this.txtBoxCelular.Location = new System.Drawing.Point(122, 218);
+            this.txtBoxCelular.Location = new System.Drawing.Point(94, 169);
             this.txtBoxCelular.Name = "txtBoxCelular";
             this.txtBoxCelular.Size = new System.Drawing.Size(182, 17);
             this.txtBoxCelular.TabIndex = 23;
@@ -170,7 +148,7 @@ namespace FastFoodManagement.View.Registration
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Location = new System.Drawing.Point(119, 328);
+            this.panel5.Location = new System.Drawing.Point(91, 279);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(218, 1);
             this.panel5.TabIndex = 25;
@@ -181,46 +159,63 @@ namespace FastFoodManagement.View.Registration
             this.txtBoxLembrete.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtBoxLembrete.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxLembrete.ForeColor = System.Drawing.Color.White;
-            this.txtBoxLembrete.Location = new System.Drawing.Point(122, 307);
+            this.txtBoxLembrete.Location = new System.Drawing.Point(94, 258);
             this.txtBoxLembrete.Name = "txtBoxLembrete";
             this.txtBoxLembrete.Size = new System.Drawing.Size(182, 17);
             this.txtBoxLembrete.TabIndex = 24;
             this.txtBoxLembrete.Text = "Lembrete senha";
             this.txtBoxLembrete.Click += new System.EventHandler(this.txtBoxLembrete_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::FastFoodManagement.Properties.Resources.logoLogin;
+            this.pictureBox1.Location = new System.Drawing.Point(135, 26);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(127, 88);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            // 
+            // panelMain
+            // 
+            this.panelMain.Controls.Add(this.pictureBox1);
+            this.panelMain.Controls.Add(this.panel5);
+            this.panelMain.Controls.Add(this.txbEmail);
+            this.panelMain.Controls.Add(this.txtBoxLembrete);
+            this.panelMain.Controls.Add(this.txbPassword);
+            this.panelMain.Controls.Add(this.txtBoxCelular);
+            this.panelMain.Controls.Add(this.panel1);
+            this.panelMain.Controls.Add(this.panel4);
+            this.panelMain.Controls.Add(this.panel2);
+            this.panelMain.Controls.Add(this.panel3);
+            this.panelMain.Controls.Add(this.btnCadastrar);
+            this.panelMain.Controls.Add(this.txtBoxRepeatPassword);
+            this.panelMain.Location = new System.Drawing.Point(0, 0);
+            this.panelMain.Name = "panelMain";
+            this.panelMain.Size = new System.Drawing.Size(408, 349);
+            this.panelMain.TabIndex = 26;
+            // 
             // frmRegistration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(57)))), ((int)(((byte)(79)))));
-            this.ClientSize = new System.Drawing.Size(447, 488);
-            this.Controls.Add(this.panel5);
-            this.Controls.Add(this.txtBoxLembrete);
-            this.Controls.Add(this.txtBoxCelular);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.txtBoxRepeatPassword);
-            this.Controls.Add(this.btnVoltar);
-            this.Controls.Add(this.btnCadastrar);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.txbPassword);
-            this.Controls.Add(this.txbEmail);
-            this.Controls.Add(this.pictureBox1);
-            this.MinimumSize = new System.Drawing.Size(463, 527);
+            this.ClientSize = new System.Drawing.Size(408, 348);
+            this.Controls.Add(this.panelMain);
+            this.MinimumSize = new System.Drawing.Size(408, 349);
             this.Name = "frmRegistration";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmRegistration";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panelMain.ResumeLayout(false);
+            this.panelMain.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btnVoltar;
         private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
@@ -232,5 +227,6 @@ namespace FastFoodManagement.View.Registration
         private System.Windows.Forms.TextBox txtBoxCelular;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.TextBox txtBoxLembrete;
+        private System.Windows.Forms.Panel panelMain;
     }
 }
