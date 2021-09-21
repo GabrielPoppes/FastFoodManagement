@@ -113,6 +113,7 @@ namespace FastFoodManagement.View.Login
             this.btnCadastrar.TabIndex = 5;
             this.btnCadastrar.Text = "CADASTRAR";
             this.btnCadastrar.UseVisualStyleBackColor = false;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // btnSair
             // 

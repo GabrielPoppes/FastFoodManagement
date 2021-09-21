@@ -1,4 +1,5 @@
-﻿using FastFoodManagement.View.SystemOptions;
+﻿using FastFoodManagement.View.Registration;
+using FastFoodManagement.View.SystemOptions;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -48,9 +49,20 @@ namespace FastFoodManagement.View.Login
         }
         #endregion
 
+        #region Botão sair (evento click)
         private void btnSair_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
+        #endregion
+
+        #region Botão cadastrar (evento click)
+        private void btnCadastrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            frmRegistration Registration = new frmRegistration();
+            Registration.Show();
+        }
+        #endregion
     }
 }
