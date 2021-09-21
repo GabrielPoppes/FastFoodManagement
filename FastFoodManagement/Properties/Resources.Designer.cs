@@ -63,9 +63,59 @@ namespace FastFoodManagement.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _285645_user_icon {
+            get {
+                object obj = ResourceManager.GetObject("285645_user_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _285645_user_icon__1_ {
+            get {
+                object obj = ResourceManager.GetObject("285645_user_icon (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap GERENCIADORLOGO {
             get {
                 object obj = ResourceManager.GetObject("GERENCIADORLOGO", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconPasswordLogin {
+            get {
+                object obj = ResourceManager.GetObject("iconPasswordLogin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logoLogin {
+            get {
+                object obj = ResourceManager.GetObject("logoLogin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logouserIcon {
+            get {
+                object obj = ResourceManager.GetObject("logouserIcon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

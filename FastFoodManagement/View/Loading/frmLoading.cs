@@ -1,4 +1,5 @@
-﻿using FastFoodManagement.View.SystemOptions;
+﻿using FastFoodManagement.View.Login;
+using FastFoodManagement.View.SystemOptions;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -37,15 +38,15 @@ namespace FastFoodManagement
         }
         #endregion
 
-        #region Codificação do tempo do loading no evento Timer
+        #region Codificação do tempo do loading no evento Timer e abertura da form
         private void timer1_Tick(object sender, EventArgs e)
         {
             panelBarProgressLoading.Width += 3;
             if(panelBarProgressLoading.Width >= 699)
             {
                 timer1.Stop();
-                frmSystemOptions frmOption = new frmSystemOptions();
-                frmOption.Show();
+                frmLogin Login = new frmLogin();
+                Login.Show();
                 this.Hide();
             }
         }
