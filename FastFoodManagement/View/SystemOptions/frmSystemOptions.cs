@@ -26,5 +26,14 @@ namespace FastFoodManagement.View.SystemOptions
             frmCaixa.Show();
         }
         #endregion
+
+        #region Ação click na imagem Caixa
+        private void pictureCaixa_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            frmMain frmCaixa = new frmMain();
+            frmCaixa.Show();
+        }
+        #endregion
     }
 }

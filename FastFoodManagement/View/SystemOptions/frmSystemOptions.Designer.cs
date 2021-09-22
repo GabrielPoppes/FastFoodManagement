@@ -33,14 +33,14 @@ namespace FastFoodManagement.View.SystemOptions
             this.btnCaixa = new System.Windows.Forms.Button();
             this.btnPedidos = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureCaixa = new System.Windows.Forms.PictureBox();
+            this.picturePedidos = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panelfrmSystemOptions.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureCaixa)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picturePedidos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // panelfrmSystemOptions
@@ -83,8 +83,8 @@ namespace FastFoodManagement.View.SystemOptions
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Controls.Add(this.pictureCaixa);
+            this.panel1.Controls.Add(this.picturePedidos);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.btnPedidos);
             this.panel1.Controls.Add(this.btnCaixa);
@@ -94,15 +94,26 @@ namespace FastFoodManagement.View.SystemOptions
             this.panel1.Size = new System.Drawing.Size(408, 348);
             this.panel1.TabIndex = 4;
             // 
-            // pictureBox2
+            // pictureCaixa
             // 
-            this.pictureBox2.Image = global::FastFoodManagement.Properties.Resources.pedidos;
-            this.pictureBox2.Location = new System.Drawing.Point(227, 153);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(149, 122);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 4;
-            this.pictureBox2.TabStop = false;
+            this.pictureCaixa.Image = global::FastFoodManagement.Properties.Resources.boxPic;
+            this.pictureCaixa.Location = new System.Drawing.Point(54, 153);
+            this.pictureCaixa.Name = "pictureCaixa";
+            this.pictureCaixa.Size = new System.Drawing.Size(149, 122);
+            this.pictureCaixa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureCaixa.TabIndex = 5;
+            this.pictureCaixa.TabStop = false;
+            this.pictureCaixa.Click += new System.EventHandler(this.pictureCaixa_Click);
+            // 
+            // picturePedidos
+            // 
+            this.picturePedidos.Image = global::FastFoodManagement.Properties.Resources.pedidos;
+            this.picturePedidos.Location = new System.Drawing.Point(227, 153);
+            this.picturePedidos.Name = "picturePedidos";
+            this.picturePedidos.Size = new System.Drawing.Size(149, 122);
+            this.picturePedidos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picturePedidos.TabIndex = 4;
+            this.picturePedidos.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -114,16 +125,6 @@ namespace FastFoodManagement.View.SystemOptions
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::FastFoodManagement.Properties.Resources.box;
-            this.pictureBox3.Location = new System.Drawing.Point(54, 153);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(149, 122);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 5;
-            this.pictureBox3.TabStop = false;
             // 
             // frmSystemOptions
             // 
@@ -137,9 +138,9 @@ namespace FastFoodManagement.View.SystemOptions
             this.Text = "Opções de setores";
             this.panelfrmSystemOptions.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureCaixa)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picturePedidos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -151,7 +152,7 @@ namespace FastFoodManagement.View.SystemOptions
         private System.Windows.Forms.Button btnPedidos;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox picturePedidos;
+        private System.Windows.Forms.PictureBox pictureCaixa;
     }
 }
