@@ -145,5 +145,29 @@
   <ItemGroup>
     <None Include="Resources\boxPic.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\burguer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sobremesa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dessert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drink.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drinks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drinkalcool.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
