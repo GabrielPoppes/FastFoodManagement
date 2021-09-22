@@ -108,7 +108,7 @@ namespace FastFoodManagement.View.BoxService
             this.btnLanche.FlatAppearance.BorderSize = 0;
             this.btnLanche.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLanche.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLanche.ForeColor = System.Drawing.Color.White;
+            this.btnLanche.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(178)))));
             this.btnLanche.Location = new System.Drawing.Point(0, 188);
             this.btnLanche.Name = "btnLanche";
             this.btnLanche.Padding = new System.Windows.Forms.Padding(0, 0, 12, 0);
@@ -124,7 +124,7 @@ namespace FastFoodManagement.View.BoxService
             this.btnSobremesa.FlatAppearance.BorderSize = 0;
             this.btnSobremesa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSobremesa.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSobremesa.ForeColor = System.Drawing.Color.White;
+            this.btnSobremesa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(178)))));
             this.btnSobremesa.Location = new System.Drawing.Point(0, 235);
             this.btnSobremesa.Name = "btnSobremesa";
             this.btnSobremesa.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
@@ -140,7 +140,7 @@ namespace FastFoodManagement.View.BoxService
             this.btnBebida.FlatAppearance.BorderSize = 0;
             this.btnBebida.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBebida.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBebida.ForeColor = System.Drawing.Color.White;
+            this.btnBebida.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(178)))));
             this.btnBebida.Location = new System.Drawing.Point(0, 282);
             this.btnBebida.Name = "btnBebida";
             this.btnBebida.Padding = new System.Windows.Forms.Padding(0, 0, 14, 0);
@@ -156,7 +156,7 @@ namespace FastFoodManagement.View.BoxService
             this.btnBebidaAlcoolica.FlatAppearance.BorderSize = 0;
             this.btnBebidaAlcoolica.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBebidaAlcoolica.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBebidaAlcoolica.ForeColor = System.Drawing.Color.White;
+            this.btnBebidaAlcoolica.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(178)))));
             this.btnBebidaAlcoolica.Location = new System.Drawing.Point(0, 329);
             this.btnBebidaAlcoolica.Name = "btnBebidaAlcoolica";
             this.btnBebidaAlcoolica.Padding = new System.Windows.Forms.Padding(43, 0, 0, 0);
@@ -168,7 +168,7 @@ namespace FastFoodManagement.View.BoxService
             // 
             // pictureBebidaAlcoolica
             // 
-            this.pictureBebidaAlcoolica.Image = global::FastFoodManagement.Properties.Resources.drinkalcool;
+            this.pictureBebidaAlcoolica.Image = global::FastFoodManagement.Properties.Resources._811447_beer_celebration_drink_party_alcohol_icon__1_;
             this.pictureBebidaAlcoolica.Location = new System.Drawing.Point(12, 336);
             this.pictureBebidaAlcoolica.Name = "pictureBebidaAlcoolica";
             this.pictureBebidaAlcoolica.Size = new System.Drawing.Size(30, 30);
@@ -178,7 +178,7 @@ namespace FastFoodManagement.View.BoxService
             // 
             // pictureBebida
             // 
-            this.pictureBebida.Image = global::FastFoodManagement.Properties.Resources.drinks;
+            this.pictureBebida.Image = global::FastFoodManagement.Properties.Resources._5079021_beer_beverage_can_coffee_drink_icon__1_;
             this.pictureBebida.Location = new System.Drawing.Point(12, 286);
             this.pictureBebida.Name = "pictureBebida";
             this.pictureBebida.Size = new System.Drawing.Size(30, 30);
@@ -188,7 +188,7 @@ namespace FastFoodManagement.View.BoxService
             // 
             // pictureSobremesa
             // 
-            this.pictureSobremesa.Image = global::FastFoodManagement.Properties.Resources.dessert;
+            this.pictureSobremesa.Image = global::FastFoodManagement.Properties.Resources._5627011_baked_bakery_dessert_food_homemade_icon__1_;
             this.pictureSobremesa.Location = new System.Drawing.Point(12, 240);
             this.pictureSobremesa.Name = "pictureSobremesa";
             this.pictureSobremesa.Size = new System.Drawing.Size(30, 30);
@@ -198,7 +198,7 @@ namespace FastFoodManagement.View.BoxService
             // 
             // pictureLanche
             // 
-            this.pictureLanche.Image = global::FastFoodManagement.Properties.Resources.burguer;
+            this.pictureLanche.Image = global::FastFoodManagement.Properties.Resources._5627005_burger_cheese_cheeseburger_food_hamburger_icon__1_;
             this.pictureLanche.Location = new System.Drawing.Point(12, 196);
             this.pictureLanche.Name = "pictureLanche";
             this.pictureLanche.Size = new System.Drawing.Size(30, 30);

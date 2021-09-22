@@ -169,5 +169,29 @@
   <ItemGroup>
     <None Include="Resources\drinkalcool.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5627005_burger_cheese_cheeseburger_food_hamburger_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5627011_baked_bakery_dessert_food_homemade_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5079021_beer_beverage_can_coffee_drink_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\811447_beer_celebration_drink_party_alcohol_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5079021_beer_beverage_can_coffee_drink_icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\811447_beer_celebration_drink_party_alcohol_icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5627011_baked_bakery_dessert_food_homemade_icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5627005_burger_cheese_cheeseburger_food_hamburger_icon %281%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

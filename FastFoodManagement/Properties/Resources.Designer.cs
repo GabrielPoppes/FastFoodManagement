@@ -83,6 +83,86 @@ namespace FastFoodManagement.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _5079021_beer_beverage_can_coffee_drink_icon {
+            get {
+                object obj = ResourceManager.GetObject("5079021_beer_beverage_can_coffee_drink_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _5079021_beer_beverage_can_coffee_drink_icon__1_ {
+            get {
+                object obj = ResourceManager.GetObject("5079021_beer_beverage_can_coffee_drink_icon (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _5627005_burger_cheese_cheeseburger_food_hamburger_icon {
+            get {
+                object obj = ResourceManager.GetObject("5627005_burger_cheese_cheeseburger_food_hamburger_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _5627005_burger_cheese_cheeseburger_food_hamburger_icon__1_ {
+            get {
+                object obj = ResourceManager.GetObject("5627005_burger_cheese_cheeseburger_food_hamburger_icon (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _5627011_baked_bakery_dessert_food_homemade_icon {
+            get {
+                object obj = ResourceManager.GetObject("5627011_baked_bakery_dessert_food_homemade_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _5627011_baked_bakery_dessert_food_homemade_icon__1_ {
+            get {
+                object obj = ResourceManager.GetObject("5627011_baked_bakery_dessert_food_homemade_icon (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _811447_beer_celebration_drink_party_alcohol_icon {
+            get {
+                object obj = ResourceManager.GetObject("811447_beer_celebration_drink_party_alcohol_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _811447_beer_celebration_drink_party_alcohol_icon__1_ {
+            get {
+                object obj = ResourceManager.GetObject("811447_beer_celebration_drink_party_alcohol_icon (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap box {
             get {
                 object obj = ResourceManager.GetObject("box", resourceCulture);
