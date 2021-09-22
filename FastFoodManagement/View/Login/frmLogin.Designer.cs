@@ -126,7 +126,7 @@ namespace FastFoodManagement.View.Login
             this.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSair.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSair.ForeColor = System.Drawing.Color.White;
-            this.btnSair.Location = new System.Drawing.Point(351, 60);
+            this.btnSair.Location = new System.Drawing.Point(342, 45);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(45, 28);
             this.btnSair.TabIndex = 6;
@@ -186,9 +186,9 @@ namespace FastFoodManagement.View.Login
             this.panel3.Controls.Add(this.btnVoltar);
             this.panel3.Controls.Add(this.btnSair);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 350);
+            this.panel3.Location = new System.Drawing.Point(0, 365);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(408, 100);
+            this.panel3.Size = new System.Drawing.Size(408, 85);
             this.panel3.TabIndex = 11;
             // 
             // btnVoltar
@@ -197,7 +197,7 @@ namespace FastFoodManagement.View.Login
             this.btnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVoltar.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVoltar.ForeColor = System.Drawing.Color.White;
-            this.btnVoltar.Location = new System.Drawing.Point(333, 60);
+            this.btnVoltar.Location = new System.Drawing.Point(324, 45);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(63, 28);
             this.btnVoltar.TabIndex = 7;

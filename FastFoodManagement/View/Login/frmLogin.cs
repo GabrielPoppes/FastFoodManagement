@@ -44,9 +44,7 @@ namespace FastFoodManagement.View.Login
         #region Botão entrar (abrindo a tela de opções após clicar em entrar)
         private void btnEntrar_Click(object sender, EventArgs e)
         {
-            this.Close();
-            frmSystemOptions frmOptions = new frmSystemOptions();
-            frmOptions.Show();
+            openChildForm(new frmSystemOptions());        
         }
         #endregion
 
