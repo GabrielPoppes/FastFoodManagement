@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FastFoodManagement.View.BoxService.Components;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static FastFoodManagement.View.BoxService.Components.Widget;
 
 namespace FastFoodManagement.View.BoxService
 {
@@ -15,6 +17,46 @@ namespace FastFoodManagement.View.BoxService
         public frmMain()
         {
             InitializeComponent();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            timer1.Stop();
+        }
+
+        public void AddItem(string name, double cost, categorias category, string icon) // Método para adicionar itens
+        {
+            flowLayoutPanelLanches.Controls.Add(new Widget()
+            {
+                Title = name,
+                Cost = cost,
+                Category = category,
+                Icon = Image.FromFile("ImageFoods/" + icon)
+            });
+        }
+
+        private void frmMain_Shown(object sender, EventArgs e) // Evento show, ocorre sempre que um formulário é mostrado pela primeira vez
+        {
+            // Lanches
+            AddItem("Burguer", 19.90, categorias.Lanche, "hamburguer1.png");
+
+            // Sobremesa
+            AddItem("Sorvete", 6.90, categorias.Sobremesa, "hamburguer1.png");
+
+            // Bebida
+            AddItem("Coca-cola", 3.90, categorias.Bebida, "hamburguer1.png");
+
+            // Bebida Alcoolica
+            AddItem("Heineken", 4.90, categorias.BebidaAlcoolica, "hamburguer1.png");
+        }
+
+        private void txbPesquisa_TextChanged(object sender, EventArgs e) // Barra de pesquisa
+        {
+            foreach (var item in flowLayoutPanelLanches.Controls)
+            {
+                var wdg = (Widget)item;
+                wdg.Visible = wdg.lblTitle.Text.ToLower().ToLower().Contains(txbPesquisa.Text.Trim().ToLower());
+            }
         }
     }
 }

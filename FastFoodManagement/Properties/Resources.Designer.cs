@@ -63,6 +63,16 @@ namespace FastFoodManagement.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _172546_search_icon {
+            get {
+                object obj = ResourceManager.GetObject("172546_search_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _285645_user_icon {
             get {
                 object obj = ResourceManager.GetObject("285645_user_icon", resourceCulture);
@@ -156,6 +166,16 @@ namespace FastFoodManagement.Properties {
         internal static System.Drawing.Bitmap _811447_beer_celebration_drink_party_alcohol_icon__1_ {
             get {
                 object obj = ResourceManager.GetObject("811447_beer_celebration_drink_party_alcohol_icon (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap b9ad772005653afce4d4bd46c2efe842_XL_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("b9ad772005653afce4d4bd46c2efe842_XL-removebg-preview", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

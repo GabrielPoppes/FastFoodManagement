@@ -29,14 +29,28 @@ namespace FastFoodManagement.View.BoxService
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.panelPictureUser = new System.Windows.Forms.Panel();
-            this.lblUsername = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnLanche = new System.Windows.Forms.Button();
-            this.btnSobremesa = new System.Windows.Forms.Button();
-            this.btnBebida = new System.Windows.Forms.Button();
             this.btnBebidaAlcoolica = new System.Windows.Forms.Button();
+            this.btnBebida = new System.Windows.Forms.Button();
+            this.btnSobremesa = new System.Windows.Forms.Button();
+            this.btnLanche = new System.Windows.Forms.Button();
+            this.panelPictureUser = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblUsername = new System.Windows.Forms.Label();
+            this.panelCentral = new System.Windows.Forms.Panel();
+            this.panelCarrinho = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnLimparTudo = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.flowLayoutPanelLanches = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.txbPesquisa = new System.Windows.Forms.TextBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBebidaAlcoolica = new System.Windows.Forms.PictureBox();
             this.pictureBebida = new System.Windows.Forms.PictureBox();
             this.pictureSobremesa = new System.Windows.Forms.PictureBox();
@@ -44,6 +58,11 @@ namespace FastFoodManagement.View.BoxService
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelMenu.SuspendLayout();
             this.panelPictureUser.SuspendLayout();
+            this.panelCentral.SuspendLayout();
+            this.panelCarrinho.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBebidaAlcoolica)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBebida)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureSobremesa)).BeginInit();
@@ -69,6 +88,70 @@ namespace FastFoodManagement.View.BoxService
             this.panelMenu.Size = new System.Drawing.Size(204, 720);
             this.panelMenu.TabIndex = 0;
             // 
+            // btnBebidaAlcoolica
+            // 
+            this.btnBebidaAlcoolica.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnBebidaAlcoolica.FlatAppearance.BorderSize = 0;
+            this.btnBebidaAlcoolica.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBebidaAlcoolica.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBebidaAlcoolica.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(178)))));
+            this.btnBebidaAlcoolica.Location = new System.Drawing.Point(0, 329);
+            this.btnBebidaAlcoolica.Name = "btnBebidaAlcoolica";
+            this.btnBebidaAlcoolica.Padding = new System.Windows.Forms.Padding(43, 0, 0, 0);
+            this.btnBebidaAlcoolica.Size = new System.Drawing.Size(204, 47);
+            this.btnBebidaAlcoolica.TabIndex = 8;
+            this.btnBebidaAlcoolica.Text = "Bebida alcóolica";
+            this.btnBebidaAlcoolica.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnBebidaAlcoolica.UseVisualStyleBackColor = true;
+            // 
+            // btnBebida
+            // 
+            this.btnBebida.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnBebida.FlatAppearance.BorderSize = 0;
+            this.btnBebida.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBebida.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBebida.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(178)))));
+            this.btnBebida.Location = new System.Drawing.Point(0, 282);
+            this.btnBebida.Name = "btnBebida";
+            this.btnBebida.Padding = new System.Windows.Forms.Padding(0, 0, 14, 0);
+            this.btnBebida.Size = new System.Drawing.Size(204, 47);
+            this.btnBebida.TabIndex = 7;
+            this.btnBebida.Text = "Bebida";
+            this.btnBebida.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnBebida.UseVisualStyleBackColor = true;
+            // 
+            // btnSobremesa
+            // 
+            this.btnSobremesa.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSobremesa.FlatAppearance.BorderSize = 0;
+            this.btnSobremesa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSobremesa.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSobremesa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(178)))));
+            this.btnSobremesa.Location = new System.Drawing.Point(0, 235);
+            this.btnSobremesa.Name = "btnSobremesa";
+            this.btnSobremesa.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.btnSobremesa.Size = new System.Drawing.Size(204, 47);
+            this.btnSobremesa.TabIndex = 6;
+            this.btnSobremesa.Text = "Sobremesa";
+            this.btnSobremesa.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnSobremesa.UseVisualStyleBackColor = true;
+            // 
+            // btnLanche
+            // 
+            this.btnLanche.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnLanche.FlatAppearance.BorderSize = 0;
+            this.btnLanche.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLanche.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLanche.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(178)))));
+            this.btnLanche.Location = new System.Drawing.Point(0, 188);
+            this.btnLanche.Name = "btnLanche";
+            this.btnLanche.Padding = new System.Windows.Forms.Padding(0, 0, 12, 0);
+            this.btnLanche.Size = new System.Drawing.Size(204, 47);
+            this.btnLanche.TabIndex = 1;
+            this.btnLanche.Text = "Lanche";
+            this.btnLanche.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnLanche.UseVisualStyleBackColor = true;
+            // 
             // panelPictureUser
             // 
             this.panelPictureUser.Controls.Add(this.label1);
@@ -79,17 +162,6 @@ namespace FastFoodManagement.View.BoxService
             this.panelPictureUser.Name = "panelPictureUser";
             this.panelPictureUser.Size = new System.Drawing.Size(204, 188);
             this.panelPictureUser.TabIndex = 0;
-            // 
-            // lblUsername
-            // 
-            this.lblUsername.AutoSize = true;
-            this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(156)))), ((int)(((byte)(149)))));
-            this.lblUsername.Location = new System.Drawing.Point(71, 127);
-            this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(62, 16);
-            this.lblUsername.TabIndex = 1;
-            this.lblUsername.Text = "Usuário";
             // 
             // label1
             // 
@@ -102,72 +174,168 @@ namespace FastFoodManagement.View.BoxService
             this.label1.TabIndex = 2;
             this.label1.Text = "Nome do usuário aqui";
             // 
-            // btnLanche
+            // lblUsername
             // 
-            this.btnLanche.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnLanche.FlatAppearance.BorderSize = 0;
-            this.btnLanche.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLanche.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLanche.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(178)))));
-            this.btnLanche.Location = new System.Drawing.Point(0, 188);
-            this.btnLanche.Name = "btnLanche";
-            this.btnLanche.Padding = new System.Windows.Forms.Padding(0, 0, 12, 0);
-            this.btnLanche.Size = new System.Drawing.Size(204, 47);
-            this.btnLanche.TabIndex = 1;
-            this.btnLanche.Text = "Lanche";
-            this.btnLanche.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnLanche.UseVisualStyleBackColor = true;
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(156)))), ((int)(((byte)(149)))));
+            this.lblUsername.Location = new System.Drawing.Point(71, 127);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(62, 16);
+            this.lblUsername.TabIndex = 1;
+            this.lblUsername.Text = "Usuário";
             // 
-            // btnSobremesa
+            // panelCentral
             // 
-            this.btnSobremesa.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnSobremesa.FlatAppearance.BorderSize = 0;
-            this.btnSobremesa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSobremesa.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSobremesa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(178)))));
-            this.btnSobremesa.Location = new System.Drawing.Point(0, 235);
-            this.btnSobremesa.Name = "btnSobremesa";
-            this.btnSobremesa.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnSobremesa.Size = new System.Drawing.Size(204, 47);
-            this.btnSobremesa.TabIndex = 6;
-            this.btnSobremesa.Text = "Sobremesa";
-            this.btnSobremesa.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnSobremesa.UseVisualStyleBackColor = true;
+            this.panelCentral.Controls.Add(this.panelCarrinho);
+            this.panelCentral.Controls.Add(this.panel1);
+            this.panelCentral.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelCentral.Location = new System.Drawing.Point(204, 0);
+            this.panelCentral.Name = "panelCentral";
+            this.panelCentral.Size = new System.Drawing.Size(866, 720);
+            this.panelCentral.TabIndex = 1;
             // 
-            // btnBebida
+            // panelCarrinho
             // 
-            this.btnBebida.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnBebida.FlatAppearance.BorderSize = 0;
-            this.btnBebida.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBebida.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBebida.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(178)))));
-            this.btnBebida.Location = new System.Drawing.Point(0, 282);
-            this.btnBebida.Name = "btnBebida";
-            this.btnBebida.Padding = new System.Windows.Forms.Padding(0, 0, 14, 0);
-            this.btnBebida.Size = new System.Drawing.Size(204, 47);
-            this.btnBebida.TabIndex = 7;
-            this.btnBebida.Text = "Bebida";
-            this.btnBebida.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnBebida.UseVisualStyleBackColor = true;
+            this.panelCarrinho.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelCarrinho.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panelCarrinho.Controls.Add(this.panel2);
+            this.panelCarrinho.Controls.Add(this.btnLimparTudo);
+            this.panelCarrinho.Controls.Add(this.label2);
+            this.panelCarrinho.Location = new System.Drawing.Point(360, 0);
+            this.panelCarrinho.Name = "panelCarrinho";
+            this.panelCarrinho.Size = new System.Drawing.Size(503, 720);
+            this.panelCarrinho.TabIndex = 1;
             // 
-            // btnBebidaAlcoolica
+            // label2
             // 
-            this.btnBebidaAlcoolica.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnBebidaAlcoolica.FlatAppearance.BorderSize = 0;
-            this.btnBebidaAlcoolica.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBebidaAlcoolica.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBebidaAlcoolica.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(178)))));
-            this.btnBebidaAlcoolica.Location = new System.Drawing.Point(0, 329);
-            this.btnBebidaAlcoolica.Name = "btnBebidaAlcoolica";
-            this.btnBebidaAlcoolica.Padding = new System.Windows.Forms.Padding(43, 0, 0, 0);
-            this.btnBebidaAlcoolica.Size = new System.Drawing.Size(204, 47);
-            this.btnBebidaAlcoolica.TabIndex = 8;
-            this.btnBebidaAlcoolica.Text = "Bebida alcóolica";
-            this.btnBebidaAlcoolica.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnBebidaAlcoolica.UseVisualStyleBackColor = true;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Nirmala UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(57)))), ((int)(((byte)(79)))));
+            this.label2.Location = new System.Drawing.Point(13, 17);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(114, 32);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Carrinho";
+            // 
+            // btnLimparTudo
+            // 
+            this.btnLimparTudo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnLimparTudo.BackColor = System.Drawing.Color.White;
+            this.btnLimparTudo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLimparTudo.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimparTudo.Location = new System.Drawing.Point(380, 20);
+            this.btnLimparTudo.Name = "btnLimparTudo";
+            this.btnLimparTudo.Size = new System.Drawing.Size(109, 32);
+            this.btnLimparTudo.TabIndex = 4;
+            this.btnLimparTudo.Text = "Limpar tudo";
+            this.btnLimparTudo.UseVisualStyleBackColor = false;
+            // 
+            // panel2
+            // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Location = new System.Drawing.Point(4, 505);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(485, 208);
+            this.panel2.TabIndex = 5;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Nirmala UI", 15F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(57)))), ((int)(((byte)(79)))));
+            this.label3.Location = new System.Drawing.Point(10, 26);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(59, 28);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Total";
+            // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Nirmala UI", 23F, System.Drawing.FontStyle.Bold);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(57)))), ((int)(((byte)(79)))));
+            this.label4.Location = new System.Drawing.Point(346, 15);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(136, 42);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "R$45,00";
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(57)))), ((int)(((byte)(79)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Nirmala UI", 17F);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(-8, 121);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(490, 80);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Pagar";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // flowLayoutPanelLanches
+            // 
+            this.flowLayoutPanelLanches.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.flowLayoutPanelLanches.AutoScroll = true;
+            this.flowLayoutPanelLanches.Location = new System.Drawing.Point(6, 67);
+            this.flowLayoutPanelLanches.Name = "flowLayoutPanelLanches";
+            this.flowLayoutPanelLanches.Size = new System.Drawing.Size(349, 653);
+            this.flowLayoutPanelLanches.TabIndex = 0;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Controls.Add(this.txbPesquisa);
+            this.panel1.Controls.Add(this.flowLayoutPanelLanches);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(358, 720);
+            this.panel1.TabIndex = 0;
+            // 
+            // txbPesquisa
+            // 
+            this.txbPesquisa.Font = new System.Drawing.Font("Nirmala UI Semilight", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbPesquisa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(178)))));
+            this.txbPesquisa.Location = new System.Drawing.Point(6, 19);
+            this.txbPesquisa.Name = "txbPesquisa";
+            this.txbPesquisa.Size = new System.Drawing.Size(233, 39);
+            this.txbPesquisa.TabIndex = 1;
+            this.txbPesquisa.Text = "Pesquisar";
+            this.txbPesquisa.TextChanged += new System.EventHandler(this.txbPesquisa_TextChanged);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox2.Image = global::FastFoodManagement.Properties.Resources._172546_search_icon;
+            this.pictureBox2.Location = new System.Drawing.Point(208, 22);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(29, 33);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
             // 
             // pictureBebidaAlcoolica
             // 
+            this.pictureBebidaAlcoolica.BackColor = System.Drawing.Color.Transparent;
             this.pictureBebidaAlcoolica.Image = global::FastFoodManagement.Properties.Resources._811447_beer_celebration_drink_party_alcohol_icon__1_;
             this.pictureBebidaAlcoolica.Location = new System.Drawing.Point(12, 336);
             this.pictureBebidaAlcoolica.Name = "pictureBebidaAlcoolica";
@@ -178,6 +346,7 @@ namespace FastFoodManagement.View.BoxService
             // 
             // pictureBebida
             // 
+            this.pictureBebida.BackColor = System.Drawing.Color.Transparent;
             this.pictureBebida.Image = global::FastFoodManagement.Properties.Resources._5079021_beer_beverage_can_coffee_drink_icon__1_;
             this.pictureBebida.Location = new System.Drawing.Point(12, 286);
             this.pictureBebida.Name = "pictureBebida";
@@ -188,6 +357,7 @@ namespace FastFoodManagement.View.BoxService
             // 
             // pictureSobremesa
             // 
+            this.pictureSobremesa.BackColor = System.Drawing.Color.Transparent;
             this.pictureSobremesa.Image = global::FastFoodManagement.Properties.Resources._5627011_baked_bakery_dessert_food_homemade_icon__1_;
             this.pictureSobremesa.Location = new System.Drawing.Point(12, 240);
             this.pictureSobremesa.Name = "pictureSobremesa";
@@ -198,6 +368,7 @@ namespace FastFoodManagement.View.BoxService
             // 
             // pictureLanche
             // 
+            this.pictureLanche.BackColor = System.Drawing.Color.Transparent;
             this.pictureLanche.Image = global::FastFoodManagement.Properties.Resources._5627005_burger_cheese_cheeseburger_food_hamburger_icon__1_;
             this.pictureLanche.Location = new System.Drawing.Point(12, 196);
             this.pictureLanche.Name = "pictureLanche";
@@ -220,14 +391,25 @@ namespace FastFoodManagement.View.BoxService
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1268, 720);
+            this.ClientSize = new System.Drawing.Size(1070, 720);
+            this.Controls.Add(this.panelCentral);
             this.Controls.Add(this.panelMenu);
+            this.DoubleBuffered = true;
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmMain";
+            this.Shown += new System.EventHandler(this.frmMain_Shown);
             this.panelMenu.ResumeLayout(false);
             this.panelPictureUser.ResumeLayout(false);
             this.panelPictureUser.PerformLayout();
+            this.panelCentral.ResumeLayout(false);
+            this.panelCarrinho.ResumeLayout(false);
+            this.panelCarrinho.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBebidaAlcoolica)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBebida)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureSobremesa)).EndInit();
@@ -252,5 +434,18 @@ namespace FastFoodManagement.View.BoxService
         private System.Windows.Forms.Button btnBebida;
         private System.Windows.Forms.Button btnSobremesa;
         private System.Windows.Forms.Button btnLanche;
+        private System.Windows.Forms.Panel panelCentral;
+        private System.Windows.Forms.Panel panelCarrinho;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnLimparTudo;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.TextBox txbPesquisa;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelLanches;
     }
 }

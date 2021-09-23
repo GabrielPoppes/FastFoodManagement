@@ -45,6 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="View\BoxService\Components\Widget.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\BoxService\Components\Widget.Designer.cs">
+      <DependentUpon>Widget.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\BoxService\frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +93,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="View\BoxService\Components\Widget.resx">
+      <DependentUpon>Widget.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\BoxService\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -192,6 +201,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\5627005_burger_cheese_cheeseburger_food_hamburger_icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b9ad772005653afce4d4bd46c2efe842_XL-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ImageFoods\cervejaheinekenlata.png" />
+    <Content Include="ImageFoods\refricoca.png" />
+    <Content Include="ImageFoods\sorvetecremoso.png" />
+    <None Include="Resources\172546_search_icon.png" />
+    <Content Include="ImageFoods\hamburguer1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
