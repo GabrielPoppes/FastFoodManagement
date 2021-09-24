@@ -30,8 +30,8 @@ namespace FastFoodManagement.View.BoxService.Components
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblCost = new System.Windows.Forms.Label();
             this.lblTitle = new System.Windows.Forms.Label();
+            this.lblCost = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -51,17 +51,6 @@ namespace FastFoodManagement.View.BoxService.Components
             this.panel1.Size = new System.Drawing.Size(311, 153);
             this.panel1.TabIndex = 0;
             // 
-            // lblCost
-            // 
-            this.lblCost.AutoSize = true;
-            this.lblCost.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCost.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(156)))), ((int)(((byte)(149)))));
-            this.lblCost.Location = new System.Drawing.Point(11, 107);
-            this.lblCost.Name = "lblCost";
-            this.lblCost.Size = new System.Drawing.Size(93, 30);
-            this.lblCost.TabIndex = 2;
-            this.lblCost.Text = "R$18,90";
-            // 
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
@@ -73,12 +62,23 @@ namespace FastFoodManagement.View.BoxService.Components
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Hamburgão";
             // 
+            // lblCost
+            // 
+            this.lblCost.AutoSize = true;
+            this.lblCost.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCost.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(156)))), ((int)(((byte)(149)))));
+            this.lblCost.Location = new System.Drawing.Point(11, 107);
+            this.lblCost.Name = "lblCost";
+            this.lblCost.Size = new System.Drawing.Size(93, 30);
+            this.lblCost.TabIndex = 2;
+            this.lblCost.Text = "R$18,90";
+            // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::FastFoodManagement.Properties.Resources.b9ad772005653afce4d4bd46c2efe842_XL_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(159, 23);
+            this.pictureBox1.Image = global::FastFoodManagement.Properties.Resources.refricoca;
+            this.pictureBox1.Location = new System.Drawing.Point(169, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(145, 128);
+            this.pictureBox1.Size = new System.Drawing.Size(135, 141);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;

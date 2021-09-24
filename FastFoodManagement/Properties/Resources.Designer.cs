@@ -73,6 +73,16 @@ namespace FastFoodManagement.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1904665_bar_lines_list_menu_nav_icon {
+            get {
+                object obj = ResourceManager.GetObject("1904665_bar_lines_list_menu_nav_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _285645_user_icon {
             get {
                 object obj = ResourceManager.GetObject("285645_user_icon", resourceCulture);
@@ -213,6 +223,16 @@ namespace FastFoodManagement.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cervejaheinekenlata {
+            get {
+                object obj = ResourceManager.GetObject("cervejaheinekenlata", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dessert {
             get {
                 object obj = ResourceManager.GetObject("dessert", resourceCulture);
@@ -323,9 +343,29 @@ namespace FastFoodManagement.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap refricoca {
+            get {
+                object obj = ResourceManager.GetObject("refricoca", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap sobremesa {
             get {
                 object obj = ResourceManager.GetObject("sobremesa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sorvetecremoso {
+            get {
+                object obj = ResourceManager.GetObject("sorvetecremoso", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

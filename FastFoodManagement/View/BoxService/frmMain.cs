@@ -42,14 +42,16 @@ namespace FastFoodManagement.View.BoxService
         #region Itens de que serão exibidos (Evento Shown)
         private void frmMain_Shown(object sender, EventArgs e) // Evento shown, ocorre sempre que um formulário é mostrado pela primeira vez
         {
+            
             // Lanches
             AddItem("Burguer", 19.90, categorias.Lanche, "hamburguer1.png");
 
             // Sobremesa
-            AddItem("Sorvete", 6.90, categorias.Sobremesa, "hamburguer1.png");
+            AddItem("Sorvete", 6.90, categorias.Sobremesa, "sorvetecremoso.png");
 
             // Bebida
-            AddItem("Coca-cola", 3.90, categorias.Bebida, "hamburguer1.png");
+            AddItem("Coca-cola", 3.90, categorias.Bebida, "refricoca.png");
+            
 
             // Bebida Alcoolica
             AddItem("Heineken", 4.90, categorias.BebidaAlcoolica, "hamburguer1.png");
@@ -64,6 +66,13 @@ namespace FastFoodManagement.View.BoxService
                 var wdg = (Widget)item;
                 wdg.Visible = wdg.lblTitle.Text.ToLower().ToLower().Contains(txbPesquisa.Text.Trim().ToLower());
             }
+        }
+        #endregion
+
+        #region Evento de click na barra de pesquisa (para sumir o texto - estilo PlaceHolder)
+        private void txbPesquisa_Click(object sender, EventArgs e)
+        {
+            txbPesquisa.Clear();
         }
         #endregion
     }

@@ -206,13 +206,21 @@
     <None Include="Resources\b9ad772005653afce4d4bd46c2efe842_XL-removebg-preview.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ImageFoods\cervejaheinekenlata.png" />
-    <Content Include="ImageFoods\refricoca.png" />
-    <Content Include="ImageFoods\sorvetecremoso.png" />
+    <Content Include="ImageFoods\cervejaheinekenlata.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImageFoods\refricoca.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ImageFoods\sorvetecremoso.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\1904665_bar_lines_list_menu_nav_icon.png" />
     <None Include="Resources\172546_search_icon.png" />
     <Content Include="ImageFoods\hamburguer1.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
