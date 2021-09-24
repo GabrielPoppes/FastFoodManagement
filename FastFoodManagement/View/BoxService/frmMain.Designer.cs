@@ -31,13 +31,20 @@ namespace FastFoodManagement.View.BoxService
         {
             this.components = new System.ComponentModel.Container();
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.btnTodos = new System.Windows.Forms.Button();
+            this.pictureBebidaAlcoolica = new System.Windows.Forms.PictureBox();
+            this.pictureBebida = new System.Windows.Forms.PictureBox();
+            this.pictureSobremesa = new System.Windows.Forms.PictureBox();
             this.btnBebidaAlcoolica = new System.Windows.Forms.Button();
             this.btnBebida = new System.Windows.Forms.Button();
             this.btnSobremesa = new System.Windows.Forms.Button();
+            this.pictureLanche = new System.Windows.Forms.PictureBox();
             this.btnLanche = new System.Windows.Forms.Button();
             this.panelPictureUser = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.lblUsername = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelCentral = new System.Windows.Forms.Panel();
             this.panelCarrinho = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -47,30 +54,23 @@ namespace FastFoodManagement.View.BoxService
             this.btnLimparTudo = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.iconBuscarLupa = new System.Windows.Forms.PictureBox();
             this.txbPesquisa = new System.Windows.Forms.TextBox();
             this.flowLayoutPanelLanches = new System.Windows.Forms.FlowLayoutPanel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.btnTodos = new System.Windows.Forms.Button();
-            this.iconBuscarLupa = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBebidaAlcoolica = new System.Windows.Forms.PictureBox();
-            this.pictureBebida = new System.Windows.Forms.PictureBox();
-            this.pictureSobremesa = new System.Windows.Forms.PictureBox();
-            this.pictureLanche = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelMenu.SuspendLayout();
-            this.panelPictureUser.SuspendLayout();
-            this.panelCentral.SuspendLayout();
-            this.panelCarrinho.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconBuscarLupa)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBebidaAlcoolica)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBebida)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureSobremesa)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureLanche)).BeginInit();
+            this.panelPictureUser.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelCentral.SuspendLayout();
+            this.panelCarrinho.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconBuscarLupa)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -93,6 +93,66 @@ namespace FastFoodManagement.View.BoxService
             this.panelMenu.Size = new System.Drawing.Size(204, 720);
             this.panelMenu.TabIndex = 0;
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.Image = global::FastFoodManagement.Properties.Resources._1904665_bar_lines_list_menu_nav_icon;
+            this.pictureBox3.Location = new System.Drawing.Point(12, 197);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 12;
+            this.pictureBox3.TabStop = false;
+            // 
+            // btnTodos
+            // 
+            this.btnTodos.FlatAppearance.BorderSize = 0;
+            this.btnTodos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTodos.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTodos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(178)))));
+            this.btnTodos.Location = new System.Drawing.Point(0, 188);
+            this.btnTodos.Name = "btnTodos";
+            this.btnTodos.Padding = new System.Windows.Forms.Padding(58, 0, 0, 0);
+            this.btnTodos.Size = new System.Drawing.Size(204, 47);
+            this.btnTodos.TabIndex = 11;
+            this.btnTodos.Text = "Todos os produtos";
+            this.btnTodos.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnTodos.UseVisualStyleBackColor = true;
+            this.btnTodos.Click += new System.EventHandler(this.btnTodos_Click);
+            // 
+            // pictureBebidaAlcoolica
+            // 
+            this.pictureBebidaAlcoolica.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBebidaAlcoolica.Image = global::FastFoodManagement.Properties.Resources._811447_beer_celebration_drink_party_alcohol_icon__1_;
+            this.pictureBebidaAlcoolica.Location = new System.Drawing.Point(12, 381);
+            this.pictureBebidaAlcoolica.Name = "pictureBebidaAlcoolica";
+            this.pictureBebidaAlcoolica.Size = new System.Drawing.Size(30, 30);
+            this.pictureBebidaAlcoolica.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBebidaAlcoolica.TabIndex = 10;
+            this.pictureBebidaAlcoolica.TabStop = false;
+            // 
+            // pictureBebida
+            // 
+            this.pictureBebida.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBebida.Image = global::FastFoodManagement.Properties.Resources._5079021_beer_beverage_can_coffee_drink_icon__1_;
+            this.pictureBebida.Location = new System.Drawing.Point(12, 331);
+            this.pictureBebida.Name = "pictureBebida";
+            this.pictureBebida.Size = new System.Drawing.Size(30, 30);
+            this.pictureBebida.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBebida.TabIndex = 6;
+            this.pictureBebida.TabStop = false;
+            // 
+            // pictureSobremesa
+            // 
+            this.pictureSobremesa.BackColor = System.Drawing.Color.Transparent;
+            this.pictureSobremesa.Image = global::FastFoodManagement.Properties.Resources._5627011_baked_bakery_dessert_food_homemade_icon__1_;
+            this.pictureSobremesa.Location = new System.Drawing.Point(12, 285);
+            this.pictureSobremesa.Name = "pictureSobremesa";
+            this.pictureSobremesa.Size = new System.Drawing.Size(30, 30);
+            this.pictureSobremesa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureSobremesa.TabIndex = 9;
+            this.pictureSobremesa.TabStop = false;
+            // 
             // btnBebidaAlcoolica
             // 
             this.btnBebidaAlcoolica.FlatAppearance.BorderSize = 0;
@@ -107,6 +167,7 @@ namespace FastFoodManagement.View.BoxService
             this.btnBebidaAlcoolica.Text = "Bebida alcóolica";
             this.btnBebidaAlcoolica.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnBebidaAlcoolica.UseVisualStyleBackColor = true;
+            this.btnBebidaAlcoolica.Click += new System.EventHandler(this.btnBebidaAlcoolica_Click);
             // 
             // btnBebida
             // 
@@ -122,6 +183,7 @@ namespace FastFoodManagement.View.BoxService
             this.btnBebida.Text = "Bebida";
             this.btnBebida.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnBebida.UseVisualStyleBackColor = true;
+            this.btnBebida.Click += new System.EventHandler(this.btnBebida_Click);
             // 
             // btnSobremesa
             // 
@@ -137,6 +199,18 @@ namespace FastFoodManagement.View.BoxService
             this.btnSobremesa.Text = "Sobremesa";
             this.btnSobremesa.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnSobremesa.UseVisualStyleBackColor = true;
+            this.btnSobremesa.Click += new System.EventHandler(this.btnSobremesa_Click);
+            // 
+            // pictureLanche
+            // 
+            this.pictureLanche.BackColor = System.Drawing.Color.Transparent;
+            this.pictureLanche.Image = global::FastFoodManagement.Properties.Resources._5627005_burger_cheese_cheeseburger_food_hamburger_icon__1_;
+            this.pictureLanche.Location = new System.Drawing.Point(12, 241);
+            this.pictureLanche.Name = "pictureLanche";
+            this.pictureLanche.Size = new System.Drawing.Size(30, 30);
+            this.pictureLanche.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureLanche.TabIndex = 5;
+            this.pictureLanche.TabStop = false;
             // 
             // btnLanche
             // 
@@ -152,6 +226,7 @@ namespace FastFoodManagement.View.BoxService
             this.btnLanche.Text = "Lanche";
             this.btnLanche.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnLanche.UseVisualStyleBackColor = true;
+            this.btnLanche.Click += new System.EventHandler(this.btnLanche_Click);
             // 
             // panelPictureUser
             // 
@@ -185,6 +260,16 @@ namespace FastFoodManagement.View.BoxService
             this.lblUsername.Size = new System.Drawing.Size(62, 16);
             this.lblUsername.TabIndex = 1;
             this.lblUsername.Text = "Usuário";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::FastFoodManagement.Properties.Resources.Untitled_11;
+            this.pictureBox1.Location = new System.Drawing.Point(52, 34);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 89);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // panelCentral
             // 
@@ -301,6 +386,21 @@ namespace FastFoodManagement.View.BoxService
             this.panel1.Size = new System.Drawing.Size(670, 720);
             this.panel1.TabIndex = 0;
             // 
+            // iconBuscarLupa
+            // 
+            this.iconBuscarLupa.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.iconBuscarLupa.BackColor = System.Drawing.Color.Transparent;
+            this.iconBuscarLupa.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconBuscarLupa.Image = global::FastFoodManagement.Properties.Resources._172546_search_icon;
+            this.iconBuscarLupa.Location = new System.Drawing.Point(290, 22);
+            this.iconBuscarLupa.Name = "iconBuscarLupa";
+            this.iconBuscarLupa.Size = new System.Drawing.Size(29, 33);
+            this.iconBuscarLupa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.iconBuscarLupa.TabIndex = 2;
+            this.iconBuscarLupa.TabStop = false;
+            this.iconBuscarLupa.Click += new System.EventHandler(this.iconBuscarLupa_Click);
+            // 
             // txbPesquisa
             // 
             this.txbPesquisa.Font = new System.Drawing.Font("Nirmala UI Semilight", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -329,101 +429,6 @@ namespace FastFoodManagement.View.BoxService
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // btnTodos
-            // 
-            this.btnTodos.FlatAppearance.BorderSize = 0;
-            this.btnTodos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTodos.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTodos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(178)))));
-            this.btnTodos.Location = new System.Drawing.Point(0, 188);
-            this.btnTodos.Name = "btnTodos";
-            this.btnTodos.Padding = new System.Windows.Forms.Padding(58, 0, 0, 0);
-            this.btnTodos.Size = new System.Drawing.Size(204, 47);
-            this.btnTodos.TabIndex = 11;
-            this.btnTodos.Text = "Todos os produtos";
-            this.btnTodos.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnTodos.UseVisualStyleBackColor = true;
-            // 
-            // iconBuscarLupa
-            // 
-            this.iconBuscarLupa.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.iconBuscarLupa.BackColor = System.Drawing.Color.Transparent;
-            this.iconBuscarLupa.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconBuscarLupa.Image = global::FastFoodManagement.Properties.Resources._172546_search_icon;
-            this.iconBuscarLupa.Location = new System.Drawing.Point(290, 22);
-            this.iconBuscarLupa.Name = "iconBuscarLupa";
-            this.iconBuscarLupa.Size = new System.Drawing.Size(29, 33);
-            this.iconBuscarLupa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.iconBuscarLupa.TabIndex = 2;
-            this.iconBuscarLupa.TabStop = false;
-            this.iconBuscarLupa.Click += new System.EventHandler(this.iconBuscarLupa_Click);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Image = global::FastFoodManagement.Properties.Resources._1904665_bar_lines_list_menu_nav_icon;
-            this.pictureBox3.Location = new System.Drawing.Point(12, 197);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 12;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBebidaAlcoolica
-            // 
-            this.pictureBebidaAlcoolica.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBebidaAlcoolica.Image = global::FastFoodManagement.Properties.Resources._811447_beer_celebration_drink_party_alcohol_icon__1_;
-            this.pictureBebidaAlcoolica.Location = new System.Drawing.Point(12, 381);
-            this.pictureBebidaAlcoolica.Name = "pictureBebidaAlcoolica";
-            this.pictureBebidaAlcoolica.Size = new System.Drawing.Size(30, 30);
-            this.pictureBebidaAlcoolica.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBebidaAlcoolica.TabIndex = 10;
-            this.pictureBebidaAlcoolica.TabStop = false;
-            // 
-            // pictureBebida
-            // 
-            this.pictureBebida.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBebida.Image = global::FastFoodManagement.Properties.Resources._5079021_beer_beverage_can_coffee_drink_icon__1_;
-            this.pictureBebida.Location = new System.Drawing.Point(12, 331);
-            this.pictureBebida.Name = "pictureBebida";
-            this.pictureBebida.Size = new System.Drawing.Size(30, 30);
-            this.pictureBebida.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBebida.TabIndex = 6;
-            this.pictureBebida.TabStop = false;
-            // 
-            // pictureSobremesa
-            // 
-            this.pictureSobremesa.BackColor = System.Drawing.Color.Transparent;
-            this.pictureSobremesa.Image = global::FastFoodManagement.Properties.Resources._5627011_baked_bakery_dessert_food_homemade_icon__1_;
-            this.pictureSobremesa.Location = new System.Drawing.Point(12, 285);
-            this.pictureSobremesa.Name = "pictureSobremesa";
-            this.pictureSobremesa.Size = new System.Drawing.Size(30, 30);
-            this.pictureSobremesa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureSobremesa.TabIndex = 9;
-            this.pictureSobremesa.TabStop = false;
-            // 
-            // pictureLanche
-            // 
-            this.pictureLanche.BackColor = System.Drawing.Color.Transparent;
-            this.pictureLanche.Image = global::FastFoodManagement.Properties.Resources._5627005_burger_cheese_cheeseburger_food_hamburger_icon__1_;
-            this.pictureLanche.Location = new System.Drawing.Point(12, 241);
-            this.pictureLanche.Name = "pictureLanche";
-            this.pictureLanche.Size = new System.Drawing.Size(30, 30);
-            this.pictureLanche.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureLanche.TabIndex = 5;
-            this.pictureLanche.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::FastFoodManagement.Properties.Resources.Untitled_11;
-            this.pictureBox1.Location = new System.Drawing.Point(52, 34);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 89);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -437,8 +442,14 @@ namespace FastFoodManagement.View.BoxService
             this.Text = "frmMain";
             this.Shown += new System.EventHandler(this.frmMain_Shown);
             this.panelMenu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBebidaAlcoolica)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBebida)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureSobremesa)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureLanche)).EndInit();
             this.panelPictureUser.ResumeLayout(false);
             this.panelPictureUser.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelCentral.ResumeLayout(false);
             this.panelCarrinho.ResumeLayout(false);
             this.panelCarrinho.PerformLayout();
@@ -447,12 +458,6 @@ namespace FastFoodManagement.View.BoxService
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconBuscarLupa)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBebidaAlcoolica)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBebida)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureSobremesa)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureLanche)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
