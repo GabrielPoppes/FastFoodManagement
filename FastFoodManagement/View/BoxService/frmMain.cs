@@ -44,17 +44,33 @@ namespace FastFoodManagement.View.BoxService
         {
             
             // Lanches
-            AddItem("Burguer", 19.90, categorias.Lanche, "hamburguer1.png");
+            AddItem("Hamburgão", 19.90, categorias.Lanche, "hamburguer1.png");
+            AddItem("X-Salada", 19.90, categorias.Lanche, "x-saladas.png");
+            AddItem("X-Bacon", 19.90, categorias.Lanche, "x-bacon.png");
+            AddItem("X-Tudo", 19.90, categorias.Lanche, "x-tudo.png");
+            AddItem("X-Egg", 19.90, categorias.Lanche, "x-egg.png");
 
             // Sobremesa
-            AddItem("Sorvete", 6.90, categorias.Sobremesa, "sorvetecremoso.png");
+            AddItem("Sorvete Chocolate", 6.90, categorias.Sobremesa, "sorvetecremoso.png");
+            AddItem("Casquinha Mista", 6.90, categorias.Sobremesa, "casquinha-mista.png");
+            AddItem("Sorvete Cone", 6.90, categorias.Sobremesa, "sorvete-cone-recheado.png");
+            AddItem("Casquinha baunilha", 6.90, categorias.Sobremesa, "casquinha-baunilha.png");
+            AddItem("Picolé vegano", 6.90, categorias.Sobremesa, "picole-vegano-chocolate.png");
 
             // Bebida
-            AddItem("Coca-cola", 3.90, categorias.Bebida, "refricoca.png");
+            AddItem("Coca-cola lata", 3.90, categorias.Bebida, "refricoca.png");
+            AddItem("Fanta Uva lata", 3.90, categorias.Bebida, "fanta-uva.png");
+            AddItem("H2O garrafa", 3.90, categorias.Bebida, "refri-H2O.png");
+            AddItem("Tubaina garrafa", 3.90, categorias.Bebida, "tubaina.png");
+            AddItem("Pepsi garrafa", 3.90, categorias.Bebida, "pepsi.png");
             
 
             // Bebida Alcoolica
-            AddItem("Heineken", 4.90, categorias.BebidaAlcoolica, "hamburguer1.png");
+            AddItem("Heineken lata", 4.90, categorias.BebidaAlcoolica, "cervejaheinekenlata.png");
+            AddItem("Skol lata", 4.90, categorias.BebidaAlcoolica, "skol.png");
+            AddItem("Brahma lata", 4.90, categorias.BebidaAlcoolica, "brahma.png");
+            AddItem("Itaipava lata", 4.90, categorias.BebidaAlcoolica, "itaipava.png");
+            AddItem("Amstel lata", 4.90, categorias.BebidaAlcoolica, "amstel.png");
         }
         #endregion
 

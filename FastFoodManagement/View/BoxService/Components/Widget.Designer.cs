@@ -58,9 +58,9 @@ namespace FastFoodManagement.View.BoxService.Components
             this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(57)))), ((int)(((byte)(79)))));
             this.lblTitle.Location = new System.Drawing.Point(9, 10);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(171, 37);
+            this.lblTitle.Size = new System.Drawing.Size(267, 37);
             this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "Hamburgão";
+            this.lblTitle.Text = "Casquinha baunilha";
             // 
             // lblCost
             // 
@@ -76,9 +76,9 @@ namespace FastFoodManagement.View.BoxService.Components
             // pictureBox1
             // 
             this.pictureBox1.Image = global::FastFoodManagement.Properties.Resources.refricoca;
-            this.pictureBox1.Location = new System.Drawing.Point(169, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(178, 50);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(135, 141);
+            this.pictureBox1.Size = new System.Drawing.Size(126, 94);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
