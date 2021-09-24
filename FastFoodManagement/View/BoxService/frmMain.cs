@@ -42,7 +42,7 @@ namespace FastFoodManagement.View.BoxService
         #region Itens de que serão exibidos (Evento Shown)
         private void frmMain_Shown(object sender, EventArgs e) // Evento shown, ocorre sempre que um formulário é mostrado pela primeira vez
         {
-            
+
             // Lanches
             AddItem("Hamburgão", 19.90, categorias.Lanche, "hamburguer1.png");
             AddItem("X-Salada", 19.90, categorias.Lanche, "x-saladas.png");
@@ -62,8 +62,8 @@ namespace FastFoodManagement.View.BoxService
             AddItem("Fanta Uva lata", 3.90, categorias.Bebida, "fanta-uva.png");
             AddItem("H2O garrafa", 3.90, categorias.Bebida, "refri-H2O.png");
             AddItem("Tubaina garrafa", 3.90, categorias.Bebida, "tubaina.png");
-            AddItem("Pepsi garrafa", 3.90, categorias.Bebida, "pepsi.png");
-            
+            AddItem("Pepsi lata", 3.90, categorias.Bebida, "pepsi.png");
+
 
             // Bebida Alcoolica
             AddItem("Heineken lata", 4.90, categorias.BebidaAlcoolica, "cervejaheinekenlata.png");
@@ -77,11 +77,7 @@ namespace FastFoodManagement.View.BoxService
         #region Barra de pesquisa
         private void txbPesquisa_TextChanged(object sender, EventArgs e) // Barra de pesquisa
         {
-            foreach (var item in flowLayoutPanelLanches.Controls)
-            {
-                var wdg = (Widget)item;
-                wdg.Visible = wdg.lblTitle.Text.ToLower().ToLower().Contains(txbPesquisa.Text.Trim().ToLower());
-            }
+
         }
         #endregion
 
@@ -91,5 +87,26 @@ namespace FastFoodManagement.View.BoxService
             txbPesquisa.Clear();
         }
         #endregion
+
+        private void txbPesquisa_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter || txbPesquisa.Text.Trim().Length == 0)
+            {
+                foreach (var item in flowLayoutPanelLanches.Controls)
+                {
+                    var wdg = (Widget)item;
+                    wdg.Visible = wdg.lblTitle.Text.ToLower().ToLower().Contains(txbPesquisa.Text.Trim().ToLower());
+                }
+            }
+        }
+
+        private void iconBuscarLupa_Click(object sender, EventArgs e)
+        {
+            foreach (var item in flowLayoutPanelLanches.Controls)
+            {
+                var wdg = (Widget)item;
+                wdg.Visible = wdg.lblTitle.Text.ToLower().ToLower().Contains(txbPesquisa.Text.Trim().ToLower());
+            }
+        }
     }
 }

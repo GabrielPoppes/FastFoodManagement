@@ -51,7 +51,7 @@ namespace FastFoodManagement.View.BoxService
             this.flowLayoutPanelLanches = new System.Windows.Forms.FlowLayoutPanel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.btnTodos = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.iconBuscarLupa = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBebidaAlcoolica = new System.Windows.Forms.PictureBox();
             this.pictureBebida = new System.Windows.Forms.PictureBox();
@@ -64,7 +64,7 @@ namespace FastFoodManagement.View.BoxService
             this.panelCarrinho.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconBuscarLupa)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBebidaAlcoolica)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBebida)).BeginInit();
@@ -292,7 +292,7 @@ namespace FastFoodManagement.View.BoxService
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Controls.Add(this.iconBuscarLupa);
             this.panel1.Controls.Add(this.txbPesquisa);
             this.panel1.Controls.Add(this.flowLayoutPanelLanches);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -311,7 +311,7 @@ namespace FastFoodManagement.View.BoxService
             this.txbPesquisa.TabIndex = 1;
             this.txbPesquisa.Text = "Pesquisar";
             this.txbPesquisa.Click += new System.EventHandler(this.txbPesquisa_Click);
-            this.txbPesquisa.TextChanged += new System.EventHandler(this.txbPesquisa_TextChanged);
+            this.txbPesquisa.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txbPesquisa_KeyUp);
             // 
             // flowLayoutPanelLanches
             // 
@@ -344,19 +344,20 @@ namespace FastFoodManagement.View.BoxService
             this.btnTodos.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnTodos.UseVisualStyleBackColor = true;
             // 
-            // pictureBox2
+            // iconBuscarLupa
             // 
-            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.iconBuscarLupa.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Image = global::FastFoodManagement.Properties.Resources._172546_search_icon;
-            this.pictureBox2.Location = new System.Drawing.Point(290, 22);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(29, 33);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
+            this.iconBuscarLupa.BackColor = System.Drawing.Color.Transparent;
+            this.iconBuscarLupa.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconBuscarLupa.Image = global::FastFoodManagement.Properties.Resources._172546_search_icon;
+            this.iconBuscarLupa.Location = new System.Drawing.Point(290, 22);
+            this.iconBuscarLupa.Name = "iconBuscarLupa";
+            this.iconBuscarLupa.Size = new System.Drawing.Size(29, 33);
+            this.iconBuscarLupa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.iconBuscarLupa.TabIndex = 2;
+            this.iconBuscarLupa.TabStop = false;
+            this.iconBuscarLupa.Click += new System.EventHandler(this.iconBuscarLupa_Click);
             // 
             // pictureBox3
             // 
@@ -445,7 +446,7 @@ namespace FastFoodManagement.View.BoxService
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconBuscarLupa)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBebidaAlcoolica)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBebida)).EndInit();
@@ -481,7 +482,7 @@ namespace FastFoodManagement.View.BoxService
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox iconBuscarLupa;
         private System.Windows.Forms.TextBox txbPesquisa;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelLanches;
         private System.Windows.Forms.PictureBox pictureBox3;
