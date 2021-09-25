@@ -198,7 +198,7 @@ namespace FastFoodManagement.View.BoxService
         #endregion
 
         #region Botão do MENU (Bebida Alcoolica)
-        private void btnBebidaAlcoolica_Click(object sender, EventArgs e)
+        private void btnBebidaAlcoolica_Click(object sender, string path, EventArgs e)
         {
             ExibirBebidasAlcoolicas();
         }

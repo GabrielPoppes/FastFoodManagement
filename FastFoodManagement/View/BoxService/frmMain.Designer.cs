@@ -30,6 +30,8 @@ namespace FastFoodManagement.View.BoxService
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnTodos = new System.Windows.Forms.Button();
@@ -58,6 +60,10 @@ namespace FastFoodManagement.View.BoxService
             this.txbPesquisa = new System.Windows.Forms.TextBox();
             this.flowLayoutPanelLanches = new System.Windows.Forms.FlowLayoutPanel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.gridCost = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBebidaAlcoolica)).BeginInit();
@@ -71,6 +77,7 @@ namespace FastFoodManagement.View.BoxService
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconBuscarLupa)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridCost)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -167,7 +174,6 @@ namespace FastFoodManagement.View.BoxService
             this.btnBebidaAlcoolica.Text = "Bebida alcóolica";
             this.btnBebidaAlcoolica.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnBebidaAlcoolica.UseVisualStyleBackColor = true;
-            this.btnBebidaAlcoolica.Click += new System.EventHandler(this.btnBebidaAlcoolica_Click);
             // 
             // btnBebida
             // 
@@ -287,6 +293,7 @@ namespace FastFoodManagement.View.BoxService
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panelCarrinho.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panelCarrinho.Controls.Add(this.gridCost);
             this.panelCarrinho.Controls.Add(this.panel2);
             this.panelCarrinho.Controls.Add(this.btnLimparTudo);
             this.panelCarrinho.Controls.Add(this.label2);
@@ -429,6 +436,55 @@ namespace FastFoodManagement.View.BoxService
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // gridCost
+            // 
+            this.gridCost.AllowUserToAddRows = false;
+            this.gridCost.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Nirmala UI", 15F, System.Drawing.FontStyle.Bold);
+            this.gridCost.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.gridCost.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gridCost.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.gridCost.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridCost.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Nirmala UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridCost.DefaultCellStyle = dataGridViewCellStyle2;
+            this.gridCost.Location = new System.Drawing.Point(11, 75);
+            this.gridCost.Name = "gridCost";
+            this.gridCost.ReadOnly = true;
+            this.gridCost.RowTemplate.DividerHeight = 1;
+            this.gridCost.Size = new System.Drawing.Size(454, 410);
+            this.gridCost.TabIndex = 6;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "ITEM";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "QNT";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "COST";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -458,6 +514,7 @@ namespace FastFoodManagement.View.BoxService
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconBuscarLupa)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridCost)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -492,5 +549,9 @@ namespace FastFoodManagement.View.BoxService
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelLanches;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button btnTodos;
+        private System.Windows.Forms.DataGridView gridCost;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
     }
 }
