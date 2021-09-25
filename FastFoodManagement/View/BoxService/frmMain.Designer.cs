@@ -30,8 +30,8 @@ namespace FastFoodManagement.View.BoxService
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnTodos = new System.Windows.Forms.Button();
@@ -51,7 +51,7 @@ namespace FastFoodManagement.View.BoxService
             this.panelCarrinho = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblTotal = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnLimparTudo = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -174,6 +174,7 @@ namespace FastFoodManagement.View.BoxService
             this.btnBebidaAlcoolica.Text = "Bebida alcóolica";
             this.btnBebidaAlcoolica.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnBebidaAlcoolica.UseVisualStyleBackColor = true;
+            this.btnBebidaAlcoolica.Click += new System.EventHandler(this.btnBebidaAlcoolica_Click);
             // 
             // btnBebida
             // 
@@ -307,7 +308,7 @@ namespace FastFoodManagement.View.BoxService
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.lblTotal);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Location = new System.Drawing.Point(11, 505);
             this.panel2.Name = "panel2";
@@ -329,18 +330,18 @@ namespace FastFoodManagement.View.BoxService
             this.button1.Text = "Pagar";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // label4
+            // lblTotal
             // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.lblTotal.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Nirmala UI", 23F, System.Drawing.FontStyle.Bold);
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(57)))), ((int)(((byte)(79)))));
-            this.label4.Location = new System.Drawing.Point(317, 15);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(136, 42);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "R$45,00";
+            this.lblTotal.AutoSize = true;
+            this.lblTotal.Font = new System.Drawing.Font("Nirmala UI", 23F, System.Drawing.FontStyle.Bold);
+            this.lblTotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(57)))), ((int)(((byte)(79)))));
+            this.lblTotal.Location = new System.Drawing.Point(281, 15);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(118, 42);
+            this.lblTotal.TabIndex = 2;
+            this.lblTotal.Text = "R$0,00";
             // 
             // label3
             // 
@@ -440,9 +441,9 @@ namespace FastFoodManagement.View.BoxService
             // 
             this.gridCost.AllowUserToAddRows = false;
             this.gridCost.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Nirmala UI", 15F, System.Drawing.FontStyle.Bold);
-            this.gridCost.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Nirmala UI", 15F, System.Drawing.FontStyle.Bold);
+            this.gridCost.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
             this.gridCost.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -452,14 +453,14 @@ namespace FastFoodManagement.View.BoxService
             this.Column1,
             this.Column2,
             this.Column3});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Nirmala UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridCost.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Nirmala UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridCost.DefaultCellStyle = dataGridViewCellStyle10;
             this.gridCost.Location = new System.Drawing.Point(11, 75);
             this.gridCost.Name = "gridCost";
             this.gridCost.ReadOnly = true;
@@ -540,7 +541,7 @@ namespace FastFoodManagement.View.BoxService
         private System.Windows.Forms.Button btnLimparTudo;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Panel panel1;

@@ -30,13 +30,43 @@ namespace FastFoodManagement.View.BoxService
         #region Método add item configurando as propriedades
         public void AddItem(string name, double cost, categorias category, string icon) // Método para adicionar itens
         {
-            flowLayoutPanelLanches.Controls.Add(new Widget()
+            var w = new Widget()
             {
                 Title = name,
                 Cost = cost,
                 Category = category,
                 Icon = Image.FromFile("ImageFoods/" + icon)
-            });
+            };
+
+            flowLayoutPanelLanches.Controls.Add(w);
+            w.OnSelect += (ss, ee) =>
+            {
+                var wdg = (Widget)ss;
+                foreach (DataGridViewRow item in gridCost.Rows) // gridCost = noma da grid
+                {
+                    if (item.Cells[0].Value.ToString() == wdg.lblTitle.Text)
+                    {
+                        item.Cells[1].Value = int.Parse(item.Cells[1].Value.ToString()) + 1;
+                        item.Cells[2].Value = (int.Parse(item.Cells[1].Value.ToString()) * double.Parse(wdg.lblCost.Text.Replace("R$",""))).ToString("C2");
+                        CalcularTotal();
+                        return;
+                    }
+                }
+                gridCost.Rows.Add(new object[] { wdg.lblTitle.Text, 1, wdg.lblCost.Text });
+                CalcularTotal();
+            };
+        }
+        #endregion
+
+        #region Método para calcular o total dos produtos selecionados!
+        void CalcularTotal()
+        {
+            double total=0;
+            foreach (DataGridViewRow item in gridCost.Rows)
+            {
+                total += double.Parse(item.Cells[2].Value.ToString().Replace("R$", ""));
+            }
+            lblTotal.Text = total.ToString("C2");
         }
         #endregion
 
@@ -198,7 +228,7 @@ namespace FastFoodManagement.View.BoxService
         #endregion
 
         #region Botão do MENU (Bebida Alcoolica)
-        private void btnBebidaAlcoolica_Click(object sender, string path, EventArgs e)
+        private void btnBebidaAlcoolica_Click(object sender, EventArgs e)
         {
             ExibirBebidasAlcoolicas();
         }
