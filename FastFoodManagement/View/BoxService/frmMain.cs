@@ -232,6 +232,15 @@ namespace FastFoodManagement.View.BoxService
         {
             ExibirBebidasAlcoolicas();
         }
+
+        #endregion
+
+        #region Método do botão limpar tudo (todos os itens selecionados)
+        private void btnLimparTudo_Click(object sender, EventArgs e)
+        {
+            gridCost.Rows.Clear(); // Limpando todos os itens
+            lblTotal.Text = "R$0,00"; // Retornando o total para R$0,00
+        }
         #endregion
     }
 }

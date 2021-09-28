@@ -30,9 +30,13 @@ namespace FastFoodManagement.View.BoxService
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnTodos = new System.Windows.Forms.Button();
@@ -50,6 +54,7 @@ namespace FastFoodManagement.View.BoxService
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelCentral = new System.Windows.Forms.Panel();
             this.panelCarrinho = new System.Windows.Forms.Panel();
+            this.gridCost = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.lblTotal = new System.Windows.Forms.Label();
@@ -61,10 +66,9 @@ namespace FastFoodManagement.View.BoxService
             this.txbPesquisa = new System.Windows.Forms.TextBox();
             this.flowLayoutPanelLanches = new System.Windows.Forms.FlowLayoutPanel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.gridCost = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colunaItem = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colunaQuantidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colunaPreco = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBebidaAlcoolica)).BeginInit();
@@ -75,10 +79,10 @@ namespace FastFoodManagement.View.BoxService
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelCentral.SuspendLayout();
             this.panelCarrinho.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridCost)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconBuscarLupa)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridCost)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -304,6 +308,60 @@ namespace FastFoodManagement.View.BoxService
             this.panelCarrinho.Size = new System.Drawing.Size(476, 720);
             this.panelCarrinho.TabIndex = 1;
             // 
+            // gridCost
+            // 
+            this.gridCost.AllowUserToAddRows = false;
+            this.gridCost.AllowUserToResizeRows = false;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridCost.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle8;
+            this.gridCost.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gridCost.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.gridCost.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.gridCost.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridCost.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            this.gridCost.ColumnHeadersHeight = 50;
+            this.gridCost.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colunaItem,
+            this.colunaQuantidade,
+            this.colunaPreco});
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridCost.DefaultCellStyle = dataGridViewCellStyle13;
+            this.gridCost.EnableHeadersVisualStyles = false;
+            this.gridCost.Location = new System.Drawing.Point(11, 75);
+            this.gridCost.Name = "gridCost";
+            this.gridCost.ReadOnly = true;
+            this.gridCost.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Nirmala UI", 9.75F);
+            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridCost.RowHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            this.gridCost.RowHeadersVisible = false;
+            this.gridCost.RowTemplate.DividerHeight = 1;
+            this.gridCost.RowTemplate.Height = 36;
+            this.gridCost.Size = new System.Drawing.Size(454, 410);
+            this.gridCost.TabIndex = 6;
+            // 
             // panel2
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
@@ -370,6 +428,7 @@ namespace FastFoodManagement.View.BoxService
             this.btnLimparTudo.TabIndex = 4;
             this.btnLimparTudo.Text = "Limpar tudo";
             this.btnLimparTudo.UseVisualStyleBackColor = false;
+            this.btnLimparTudo.Click += new System.EventHandler(this.btnLimparTudo_Click);
             // 
             // label2
             // 
@@ -438,64 +497,31 @@ namespace FastFoodManagement.View.BoxService
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // gridCost
+            // colunaItem
             // 
-            this.gridCost.AllowUserToAddRows = false;
-            this.gridCost.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(178)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gridCost.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.gridCost.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.gridCost.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.gridCost.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.gridCost.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.gridCost.ColumnHeadersHeight = 50;
-            this.gridCost.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridCost.DefaultCellStyle = dataGridViewCellStyle3;
-            this.gridCost.EnableHeadersVisualStyles = false;
-            this.gridCost.Location = new System.Drawing.Point(11, 75);
-            this.gridCost.Name = "gridCost";
-            this.gridCost.ReadOnly = true;
-            this.gridCost.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.gridCost.RowHeadersVisible = false;
-            this.gridCost.RowTemplate.DividerHeight = 1;
-            this.gridCost.RowTemplate.Height = 36;
-            this.gridCost.Size = new System.Drawing.Size(454, 410);
-            this.gridCost.TabIndex = 6;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Nirmala UI", 9.75F);
+            this.colunaItem.DefaultCellStyle = dataGridViewCellStyle10;
+            this.colunaItem.HeaderText = "ITEM";
+            this.colunaItem.Name = "colunaItem";
+            this.colunaItem.ReadOnly = true;
+            this.colunaItem.Width = 204;
             // 
-            // Column1
+            // colunaQuantidade
             // 
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.Column1.DefaultCellStyle = dataGridViewCellStyle2;
-            this.Column1.HeaderText = "ITEM";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Width = 150;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Nirmala UI", 9.75F);
+            this.colunaQuantidade.DefaultCellStyle = dataGridViewCellStyle11;
+            this.colunaQuantidade.HeaderText = "QUANTIDADE";
+            this.colunaQuantidade.Name = "colunaQuantidade";
+            this.colunaQuantidade.ReadOnly = true;
+            this.colunaQuantidade.Width = 150;
             // 
-            // Column2
+            // colunaPreco
             // 
-            this.Column2.HeaderText = "QNT";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            this.Column2.Width = 60;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "PREÇO";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Nirmala UI", 9.75F);
+            this.colunaPreco.DefaultCellStyle = dataGridViewCellStyle12;
+            this.colunaPreco.HeaderText = "PREÇO";
+            this.colunaPreco.Name = "colunaPreco";
+            this.colunaPreco.ReadOnly = true;
             // 
             // frmMain
             // 
@@ -521,12 +547,12 @@ namespace FastFoodManagement.View.BoxService
             this.panelCentral.ResumeLayout(false);
             this.panelCarrinho.ResumeLayout(false);
             this.panelCarrinho.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridCost)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconBuscarLupa)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridCost)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -562,8 +588,8 @@ namespace FastFoodManagement.View.BoxService
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button btnTodos;
         private System.Windows.Forms.DataGridView gridCost;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colunaItem;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colunaQuantidade;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colunaPreco;
     }
 }
