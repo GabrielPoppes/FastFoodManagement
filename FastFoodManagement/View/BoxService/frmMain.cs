@@ -235,6 +235,7 @@ namespace FastFoodManagement.View.BoxService
 
         #endregion
 
+        // Botões do Panel de Custos
         #region Método do botão limpar tudo (todos os itens selecionados)
         private void btnLimparTudo_Click(object sender, EventArgs e)
         {
@@ -242,5 +243,25 @@ namespace FastFoodManagement.View.BoxService
             lblTotal.Text = "R$0,00"; // Retornando o total para R$0,00
         }
         #endregion
+
+        #region Método do botão para finalizar o pedido
+        private void btnFinalizarPedido_Click(object sender, EventArgs e)
+        {
+            string total = lblTotal.Text;
+            if (total != "R$0,00")
+            {
+                MessageBox.Show($"Pedido finalizado com sucesso! Total: {total}");
+                gridCost.Rows.Clear(); // Limpando todos os itens
+                lblTotal.Text = "R$0,00"; // Retornando o total para R$0,00
+            }
+
+            else
+            {
+                MessageBox.Show("Por favor, selecione os itens para finalizar o pedido!");
+            }          
+            
+        }
+        #endregion
+
     }
 }

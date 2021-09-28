@@ -30,13 +30,13 @@ namespace FastFoodManagement.View.BoxService
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnTodos = new System.Windows.Forms.Button();
@@ -56,7 +56,7 @@ namespace FastFoodManagement.View.BoxService
             this.panelCarrinho = new System.Windows.Forms.Panel();
             this.gridCost = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnFinalizarPedido = new System.Windows.Forms.Button();
             this.lblTotal = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnLimparTudo = new System.Windows.Forms.Button();
@@ -312,50 +312,50 @@ namespace FastFoodManagement.View.BoxService
             // 
             this.gridCost.AllowUserToAddRows = false;
             this.gridCost.AllowUserToResizeRows = false;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gridCost.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridCost.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.gridCost.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gridCost.BackgroundColor = System.Drawing.SystemColors.Control;
             this.gridCost.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.gridCost.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridCost.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridCost.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.gridCost.ColumnHeadersHeight = 50;
             this.gridCost.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colunaItem,
             this.colunaQuantidade,
             this.colunaPreco});
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridCost.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridCost.DefaultCellStyle = dataGridViewCellStyle6;
             this.gridCost.EnableHeadersVisualStyles = false;
             this.gridCost.Location = new System.Drawing.Point(11, 75);
             this.gridCost.Name = "gridCost";
             this.gridCost.ReadOnly = true;
             this.gridCost.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Nirmala UI", 9.75F);
-            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridCost.RowHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Nirmala UI", 9.75F);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridCost.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.gridCost.RowHeadersVisible = false;
             this.gridCost.RowTemplate.DividerHeight = 1;
             this.gridCost.RowTemplate.Height = 36;
@@ -366,7 +366,7 @@ namespace FastFoodManagement.View.BoxService
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.btnFinalizarPedido);
             this.panel2.Controls.Add(this.lblTotal);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Location = new System.Drawing.Point(11, 505);
@@ -374,20 +374,21 @@ namespace FastFoodManagement.View.BoxService
             this.panel2.Size = new System.Drawing.Size(458, 208);
             this.panel2.TabIndex = 5;
             // 
-            // button1
+            // btnFinalizarPedido
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnFinalizarPedido.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(57)))), ((int)(((byte)(79)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Nirmala UI", 17F);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(9, 121);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(444, 80);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Finalizar pedido";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnFinalizarPedido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(57)))), ((int)(((byte)(79)))));
+            this.btnFinalizarPedido.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFinalizarPedido.Font = new System.Drawing.Font("Nirmala UI", 17F);
+            this.btnFinalizarPedido.ForeColor = System.Drawing.Color.White;
+            this.btnFinalizarPedido.Location = new System.Drawing.Point(9, 121);
+            this.btnFinalizarPedido.Name = "btnFinalizarPedido";
+            this.btnFinalizarPedido.Size = new System.Drawing.Size(444, 80);
+            this.btnFinalizarPedido.TabIndex = 5;
+            this.btnFinalizarPedido.Text = "Finalizar pedido";
+            this.btnFinalizarPedido.UseVisualStyleBackColor = false;
+            this.btnFinalizarPedido.Click += new System.EventHandler(this.btnFinalizarPedido_Click);
             // 
             // lblTotal
             // 
@@ -499,8 +500,8 @@ namespace FastFoodManagement.View.BoxService
             // 
             // colunaItem
             // 
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Nirmala UI", 9.75F);
-            this.colunaItem.DefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Nirmala UI", 9.75F);
+            this.colunaItem.DefaultCellStyle = dataGridViewCellStyle3;
             this.colunaItem.HeaderText = "ITEM";
             this.colunaItem.Name = "colunaItem";
             this.colunaItem.ReadOnly = true;
@@ -508,8 +509,8 @@ namespace FastFoodManagement.View.BoxService
             // 
             // colunaQuantidade
             // 
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Nirmala UI", 9.75F);
-            this.colunaQuantidade.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Nirmala UI", 9.75F);
+            this.colunaQuantidade.DefaultCellStyle = dataGridViewCellStyle4;
             this.colunaQuantidade.HeaderText = "QUANTIDADE";
             this.colunaQuantidade.Name = "colunaQuantidade";
             this.colunaQuantidade.ReadOnly = true;
@@ -517,8 +518,8 @@ namespace FastFoodManagement.View.BoxService
             // 
             // colunaPreco
             // 
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Nirmala UI", 9.75F);
-            this.colunaPreco.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Nirmala UI", 9.75F);
+            this.colunaPreco.DefaultCellStyle = dataGridViewCellStyle5;
             this.colunaPreco.HeaderText = "PREÇO";
             this.colunaPreco.Name = "colunaPreco";
             this.colunaPreco.ReadOnly = true;
@@ -577,7 +578,7 @@ namespace FastFoodManagement.View.BoxService
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnLimparTudo;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnFinalizarPedido;
         private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Timer timer1;
