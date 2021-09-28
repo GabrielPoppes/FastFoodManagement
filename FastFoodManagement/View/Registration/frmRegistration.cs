@@ -19,43 +19,6 @@ namespace FastFoodManagement.View.Registration
             InitializeComponent();
         }
 
-        #region Evento quando clica no text box e-mail
-        private void txbEmail_Click(object sender, EventArgs e)
-        {
-            txbEmail.Clear();
-        }
-        #endregion
-
-        #region Evento quando clica no text box celular
-
-        private void txtBoxCelular_Click(object sender, EventArgs e)
-        {
-            txtBoxCelular.Clear();
-        }
-        #endregion
-
-        #region Evento quando clica no text box senha
-        private void txbPassword_Click(object sender, EventArgs e)
-        {
-            txbPassword.Clear();
-        }
-        #endregion
-
-        #region Evento quando clica no text box Repetir senha
-
-        private void txtBoxRepeatPassword_Click(object sender, EventArgs e)
-        {
-            txtBoxRepeatPassword.Clear();
-        }
-        #endregion
-
-        #region Evento quando clica no text box Nome
-        private void txbNome_Click(object sender, EventArgs e)
-        {
-            txbNome.Clear();
-        }
-        #endregion
-
         #region Evento TextChanged (colocar asterisco na senha)
         private void txbPassword_TextChanged(object sender, EventArgs e)
         {
@@ -84,7 +47,7 @@ namespace FastFoodManagement.View.Registration
         #region Método do botão Cadastrar
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
-            FuncionarioDAL cadastrar = new FuncionarioDAL(txbEmail.Text, txbNome.Text, txtBoxCelular.Text, txbPassword.Text);
+            CadastroFuncionarioDAL cadastrar = new CadastroFuncionarioDAL(txbEmail.Text, txbNome.Text, txtBoxCelular.Text, txbPassword.Text, txtBoxRepeatPassword.Text); // Passando os valores do text box
             MessageBox.Show(cadastrar.mensagem);
         }
         #endregion
