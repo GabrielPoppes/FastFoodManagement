@@ -45,6 +45,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL\FuncionarioDAL.cs" />
+    <Compile Include="DAL\Conexao.cs" />
+    <Compile Include="Modelo\Controle.cs" />
     <Compile Include="View\BoxService\Components\Widget.cs">
       <SubType>UserControl</SubType>
     </Compile>

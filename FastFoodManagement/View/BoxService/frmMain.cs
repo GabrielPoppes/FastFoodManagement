@@ -250,9 +250,11 @@ namespace FastFoodManagement.View.BoxService
             string total = lblTotal.Text;
             if (total != "R$0,00")
             {
+                TesteGetValue();
                 MessageBox.Show($"Pedido finalizado com sucesso! Total: {total}");
                 gridCost.Rows.Clear(); // Limpando todos os itens
                 lblTotal.Text = "R$0,00"; // Retornando o total para R$0,00
+                LimparLista();
             }
 
             else
@@ -260,6 +262,51 @@ namespace FastFoodManagement.View.BoxService
                 MessageBox.Show("Por favor, selecione os itens para finalizar o pedido!");
             }          
             
+        }
+        #endregion
+
+        // Lista para passar os dados da GRID
+        #region Propriedades da lista
+        public string Item { get; set; }
+        public string Quantidade { get; set; }
+        public string Valor { get; set; }
+        public frmMain(string item, string quantidade, string valor)
+        {
+            Item = item;
+            Quantidade = quantidade;
+            Valor = valor;
+        }
+        #endregion
+
+        #region Lista
+        List<frmMain> ListaCustos = new List<frmMain>(); // lista
+        #endregion
+
+        #region Método para obter o valor dos itens selecionados
+        private void TesteGetValue()
+        {
+            for (int i = 0; i < gridCost.Rows.Count; i++)
+            {
+                ListaCustos.Add
+                    (new frmMain(
+                    gridCost.Rows[i].Cells[0].Value.ToString(),  // Cells 0 = Nome do item
+                    gridCost.Rows[i].Cells[1].Value.ToString(),  // Cells 1 = Quantidade do item
+                    gridCost.Rows[i].Cells[2].Value.ToString()   // Cells 2 = Valor do item
+                    ));
+            }
+
+            foreach (frmMain c in ListaCustos)
+            {
+                MessageBox.Show(c.Item);   // Exibir somente o nome do item
+                MessageBox.Show(c.Valor);  // Exibir somente o valor dos itens
+            }
+        }
+        #endregion
+
+        #region Método para limpar a lista
+        private void LimparLista()
+        {
+            ListaCustos.Clear();
         }
         #endregion
 

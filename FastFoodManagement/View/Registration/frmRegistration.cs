@@ -1,4 +1,5 @@
-﻿using FastFoodManagement.View.Login;
+﻿using FastFoodManagement.DAL;
+using FastFoodManagement.View.Login;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -48,11 +49,10 @@ namespace FastFoodManagement.View.Registration
         }
         #endregion
 
-        #region Evento quando clica no text box Lembrete senha
-
-        private void txtBoxLembrete_Click(object sender, EventArgs e)
+        #region Evento quando clica no text box Nome
+        private void txbNome_Click(object sender, EventArgs e)
         {
-            txtBoxLembrete.Clear();
+            txbNome.Clear();
         }
         #endregion
 
@@ -77,8 +77,16 @@ namespace FastFoodManagement.View.Registration
             frmLogin frm = new frmLogin();
             frm.openChildForm(new frmLogin());
         }
+
+
         #endregion
 
-
+        #region Método do botão Cadastrar
+        private void btnCadastrar_Click(object sender, EventArgs e)
+        {
+            FuncionarioDAL cadastrar = new FuncionarioDAL(txbEmail.Text, txbNome.Text, txtBoxCelular.Text, txbPassword.Text);
+            MessageBox.Show(cadastrar.mensagem);
+        }
+        #endregion
     }
 }
