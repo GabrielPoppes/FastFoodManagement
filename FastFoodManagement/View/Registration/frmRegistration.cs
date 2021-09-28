@@ -7,6 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -49,6 +50,30 @@ namespace FastFoodManagement.View.Registration
         {
             CadastroFuncionarioDAL cadastrar = new CadastroFuncionarioDAL(txbEmail.Text, txbNome.Text, txtBoxCelular.Text, txbPassword.Text, txtBoxRepeatPassword.Text); // Passando os valores do text box
             MessageBox.Show(cadastrar.mensagem);
+            LimparCampos(); // Limpar os campos (text box)
+        }
+        #endregion
+
+        
+        
+        #region Limpar todos os campos de entrada (text box)
+        public void LimparCampos()
+        {
+            if (txbEmail.Text != "" && txbNome.Text != "" && txtBoxCelular.Text != "" && txbPassword.Text != "" && txtBoxRepeatPassword.Text != "")
+            {
+                if (txbPassword.Text == txtBoxRepeatPassword.Text)
+                {
+                    Regex rg = new Regex(@"^[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})$"); // Checando se o e-mail é válido!
+                    if (rg.IsMatch(txbEmail.Text))
+                    {
+                        txbNome.Clear();
+                        txbEmail.Clear();
+                        txtBoxCelular.Clear();
+                        txbPassword.Clear();
+                        txtBoxRepeatPassword.Clear();
+                    }
+                }
+            }
         }
         #endregion
     }

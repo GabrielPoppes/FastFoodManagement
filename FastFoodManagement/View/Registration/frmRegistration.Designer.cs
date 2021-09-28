@@ -274,20 +274,20 @@ namespace FastFoodManagement.View.Registration
         private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox txbPassword;
-        private System.Windows.Forms.TextBox txbEmail;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox txtBoxRepeatPassword;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panelMain;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.TextBox txbNome;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.MaskedTextBox txtBoxCelular;
         private System.Windows.Forms.PictureBox pictureBox1;
+        public System.Windows.Forms.TextBox txbPassword;
+        public System.Windows.Forms.TextBox txbEmail;
+        public System.Windows.Forms.TextBox txbNome;
+        public System.Windows.Forms.MaskedTextBox txtBoxCelular;
+        public System.Windows.Forms.Panel panelMain;
+        public System.Windows.Forms.TextBox txtBoxRepeatPassword;
     }
 }
