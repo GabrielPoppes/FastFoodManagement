@@ -163,7 +163,7 @@ namespace FastFoodManagement.View.Registration
             this.txtBoxCelular.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F);
             this.txtBoxCelular.ForeColor = System.Drawing.Color.White;
             this.txtBoxCelular.Location = new System.Drawing.Point(144, 195);
-            this.txtBoxCelular.Mask = "(999) 00000-0000";
+            this.txtBoxCelular.Mask = "(99) 00000-0000";
             this.txtBoxCelular.Name = "txtBoxCelular";
             this.txtBoxCelular.Size = new System.Drawing.Size(215, 20);
             this.txtBoxCelular.TabIndex = 33;

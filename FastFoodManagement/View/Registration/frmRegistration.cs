@@ -66,11 +66,16 @@ namespace FastFoodManagement.View.Registration
                     Regex rg = new Regex(@"^[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})$"); // Checando se o e-mail é válido!
                     if (rg.IsMatch(txbEmail.Text))
                     {
-                        txbNome.Clear();
-                        txbEmail.Clear();
-                        txtBoxCelular.Clear();
-                        txbPassword.Clear();
-                        txtBoxRepeatPassword.Clear();
+                        Regex regex = new Regex(@"^(\([0-9]{2}\))\s([9]{1})?([0-9]{4})-([0-9]{4})$"); // checando se o celular digitado é válido
+                        Match match = regex.Match(txtBoxCelular.Text);
+                        if (match.Success)
+                        {
+                            txbNome.Clear();
+                            txbEmail.Clear();
+                            txtBoxCelular.Clear();
+                            txbPassword.Clear();
+                            txtBoxRepeatPassword.Clear();
+                        }
                     }
                 }
             }
