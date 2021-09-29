@@ -262,8 +262,6 @@ namespace FastFoodManagement.View.BoxService
                 {
                     doc.Print();
                 }
-
-                // printDocument1.Print();
                 gridCost.Rows.Clear(); // Limpando todos os itens
                 lblTotal.Text = "R$0,00"; // Retornando o total para R$0,00
             }
@@ -276,16 +274,8 @@ namespace FastFoodManagement.View.BoxService
         }
         #endregion
 
+        #region Método para imprimir a Grid
         private void myPrintPage(object sender, PrintPageEventArgs e)
-        {
-            Bitmap bm = new Bitmap(this.gridCost.Width, this.gridCost.Height);
-            gridCost.DrawToBitmap(bm, new Rectangle(0, 0, this.gridCost.Width, this.gridCost.Height));
-            e.Graphics.DrawImage(bm, 0, 0);
-            bm.Dispose();
-        }
-
-        #region Evento PrintPage para imprimir o pedido
-        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
             Bitmap bm = new Bitmap(this.gridCost.Width, this.gridCost.Height);
             gridCost.DrawToBitmap(bm, new Rectangle(0, 0, this.gridCost.Width, this.gridCost.Height));
