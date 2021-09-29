@@ -68,9 +68,7 @@ namespace FastFoodManagement.View.Registration
                                 MessageBox.Show("Cadastro realizado!");
                                 LimparCampos(); // Limpar os campos (text box)
                             }
-                            
                         }
-
                         else
                         {
                             MessageBox.Show("Por favor, digite um celular válido!");

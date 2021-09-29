@@ -1,8 +1,10 @@
-﻿using FastFoodManagement.View.BoxService.Components;
+﻿using FastFoodManagement.DAL;
+using FastFoodManagement.View.BoxService.Components;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -250,11 +252,10 @@ namespace FastFoodManagement.View.BoxService
             string total = lblTotal.Text;
             if (total != "R$0,00")
             {
-                TesteGetValue();
                 MessageBox.Show($"Pedido finalizado com sucesso! Total: {total}");
                 gridCost.Rows.Clear(); // Limpando todos os itens
                 lblTotal.Text = "R$0,00"; // Retornando o total para R$0,00
-                LimparLista();
+                printDocument1.Print();
             }
 
             else
@@ -265,50 +266,13 @@ namespace FastFoodManagement.View.BoxService
         }
         #endregion
 
-        // Lista para passar os dados da GRID
-        #region Propriedades da lista
-        public string Item { get; set; }
-        public string Quantidade { get; set; }
-        public string Valor { get; set; }
-        public frmMain(string item, string quantidade, string valor)
+        #region Evento PrintPage para imprimir o pedido
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-            Item = item;
-            Quantidade = quantidade;
-            Valor = valor;
+            Bitmap bm = new Bitmap(this.gridCost.Width, this.gridCost.Height);
+            gridCost.DrawToBitmap(bm, new Rectangle(0, 0, this.gridCost.Width, this.gridCost.Height));
+            e.Graphics.DrawImage(bm, 0, 0);
         }
         #endregion
-
-        #region Lista
-        List<frmMain> ListaCustos = new List<frmMain>(); // lista
-        #endregion
-
-        #region Método para obter o valor dos itens selecionados
-        private void TesteGetValue()
-        {
-            for (int i = 0; i < gridCost.Rows.Count; i++)
-            {
-                ListaCustos.Add
-                    (new frmMain(
-                    gridCost.Rows[i].Cells[0].Value.ToString(),  // Cells 0 = Nome do item
-                    gridCost.Rows[i].Cells[1].Value.ToString(),  // Cells 1 = Quantidade do item
-                    gridCost.Rows[i].Cells[2].Value.ToString()   // Cells 2 = Valor do item
-                    ));
-            }
-
-            foreach (frmMain c in ListaCustos)
-            {
-                MessageBox.Show(c.Item);   // Exibir somente o nome do item
-                MessageBox.Show(c.Valor);  // Exibir somente o valor dos itens
-            }
-        }
-        #endregion
-
-        #region Método para limpar a lista
-        private void LimparLista()
-        {
-            ListaCustos.Clear();
-        }
-        #endregion
-
     }
 }
