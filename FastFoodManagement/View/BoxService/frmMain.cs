@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.Drawing.Printing;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -253,9 +254,18 @@ namespace FastFoodManagement.View.BoxService
             if (total != "R$0,00")
             {
                 MessageBox.Show($"Pedido finalizado com sucesso! Total: {total}");
+
+                PrintDialog pd = new PrintDialog();
+                PrintDocument doc = new PrintDocument();
+                doc.PrintPage += myPrintPage;
+                if(pd.ShowDialog() == DialogResult.OK)
+                {
+                    doc.Print();
+                }
+
+                // printDocument1.Print();
                 gridCost.Rows.Clear(); // Limpando todos os itens
                 lblTotal.Text = "R$0,00"; // Retornando o total para R$0,00
-                printDocument1.Print();
             }
 
             else
@@ -266,12 +276,21 @@ namespace FastFoodManagement.View.BoxService
         }
         #endregion
 
+        private void myPrintPage(object sender, PrintPageEventArgs e)
+        {
+            Bitmap bm = new Bitmap(this.gridCost.Width, this.gridCost.Height);
+            gridCost.DrawToBitmap(bm, new Rectangle(0, 0, this.gridCost.Width, this.gridCost.Height));
+            e.Graphics.DrawImage(bm, 0, 0);
+            bm.Dispose();
+        }
+
         #region Evento PrintPage para imprimir o pedido
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
             Bitmap bm = new Bitmap(this.gridCost.Width, this.gridCost.Height);
             gridCost.DrawToBitmap(bm, new Rectangle(0, 0, this.gridCost.Width, this.gridCost.Height));
             e.Graphics.DrawImage(bm, 0, 0);
+            bm.Dispose();
         }
         #endregion
     }
