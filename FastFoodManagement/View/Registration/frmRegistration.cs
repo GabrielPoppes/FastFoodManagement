@@ -1,4 +1,5 @@
 ﻿using FastFoodManagement.DAL;
+using FastFoodManagement.Models;
 using FastFoodManagement.View.Login;
 using System;
 using System.Collections.Generic;
@@ -45,7 +46,7 @@ namespace FastFoodManagement.View.Registration
 
         #endregion
 
-        #region Método do botão Cadastrar
+        #region Método do botão Cadastrar (com condições de cadastro)
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
             // Condições antes de efetuar o cadastro
@@ -60,9 +61,14 @@ namespace FastFoodManagement.View.Registration
                         Match match = regex.Match(txtBoxCelular.Text);
                         if (match.Success)
                         {
-                            CadastroFuncionarioDAL cadastrar = new CadastroFuncionarioDAL(txbEmail.Text, txbNome.Text, txtBoxCelular.Text, txbPassword.Text, txtBoxRepeatPassword.Text); // Passando os valores do text box
-                            MessageBox.Show(cadastrar.mensagem);
-                            LimparCampos(); // Limpar os campos (text box)
+                            Controle controle = new Controle();
+                            string mensagem = controle.Cadastrar(txbEmail.Text, txbNome.Text, txtBoxCelular.Text, txbPassword.Text, txtBoxRepeatPassword.Text); // Passando os valores do text box
+                            if (controle.verificacao)
+                            {
+                                MessageBox.Show("Cadastro realizado!");
+                                LimparCampos(); // Limpar os campos (text box)
+                            }
+                            
                         }
 
                         else
@@ -86,8 +92,6 @@ namespace FastFoodManagement.View.Registration
             }
         }
         #endregion
-
-
 
         #region Limpar todos os campos de entrada (text box)
         public void LimparCampos()

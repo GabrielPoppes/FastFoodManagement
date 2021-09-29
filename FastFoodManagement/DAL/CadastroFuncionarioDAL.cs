@@ -14,9 +14,10 @@ namespace FastFoodManagement.DAL
         SqlCommand comando = new SqlCommand();
         Conexao con = new Conexao();
         public string mensagem;
+        public bool check = false;
 
         #region Método com as Querys para cadastrar no banco de dados
-        public CadastroFuncionarioDAL(string email, string nome, string celular, string senha, string repetirsenha)
+        public string CadastrarFuncionario(string email, string nome, string celular, string senha, string repetirsenha)
         {
             comando.CommandText = "insert into funcionario(email, nome, celular, senha) VALUES(@email, @nome, @celular, @senha)"; // Query para cadastrar o funcionário no BD
 
@@ -27,19 +28,18 @@ namespace FastFoodManagement.DAL
 
             try
             {
-
                 comando.Connection = con.Conectar();
                 comando.ExecuteNonQuery();
                 con.Desconectar();
                 this.mensagem = "Cadastrado com sucesso!";
-
-
+                check = true;
             }
 
             catch (SqlException e)
             {
                 this.mensagem = "Erro ao tentar se conectar com o banco de dados!";
             }
+            return mensagem;
         }
         #endregion
     }

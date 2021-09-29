@@ -15,6 +15,7 @@ namespace FastFoodManagement.DAL
         Conexao con = new Conexao();
         SqlDataReader armazenarDados;
 
+        #region Método para checar o acesso (login)
         public bool CheckLogin(string email, string senha)
         {
             comando.CommandText = "select * from funcionario where email = @email and senha = @senha";
@@ -42,5 +43,6 @@ namespace FastFoodManagement.DAL
             }
             return check;
         }
+        #endregion
     }
 }
