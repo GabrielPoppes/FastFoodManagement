@@ -227,8 +227,6 @@ namespace FastFoodManagement.View.Login
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox txbEmail;
         private System.Windows.Forms.TextBox txbPassword;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
@@ -241,5 +239,6 @@ namespace FastFoodManagement.View.Login
         private System.Windows.Forms.Panel panelMain;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btnVoltar;
+        public System.Windows.Forms.TextBox txbEmail;
     }
 }

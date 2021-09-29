@@ -1,10 +1,13 @@
-﻿using FastFoodManagement.Models;
+﻿using FastFoodManagement.DAL;
+using FastFoodManagement.Models;
+using FastFoodManagement.View.BoxService;
 using FastFoodManagement.View.Registration;
 using FastFoodManagement.View.SystemOptions;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -20,6 +23,37 @@ namespace FastFoodManagement.View.Login
             InitializeComponent();
             HideButtonReturn(); // Esconder botão voltar
         }
+
+        #region Passando o nome do usuário que se logou para a tabela ultimologin
+        private void GetNameLogin()
+        {
+            SqlDataAdapter da;
+            DataSet ds;
+            SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-715UFO0\SQLEXPRESS;Initial Catalog=FastFoodManager;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"); // Endereço do banco de dados
+            con.Open();
+
+            /* CÓDIGO 1 - OBTER O NOME DO BANCO DE DADOS, DE ACORDO COM O E-MAIL QUE FOI DIGITADO */
+            string emailFuncionario = Convert.ToString(txbEmail.Text); // E-mail digitado no text box
+
+            SqlCommand cmd = new SqlCommand($"select nome from funcionario where email = '{emailFuncionario}';", con); // Comando para obter o nome do e-mail digitado
+            da = new SqlDataAdapter(cmd);
+            ds = new DataSet();
+            DataTable dt = new DataTable();
+            da.Fill(ds, "FastFoodManager");
+            dt = ds.Tables["FastFoodManager"];
+            string nomeSelecionado = dt.Rows[0].ItemArray[0].ToString(); // Recebendo o nome do e-mail na string nomeSelecionado
+            /* FIM CÓDIGO 1 */
+
+            /* CÓDIGO 2 - PASSAR O NOME DIGITADO PARA O BD ULTIMOLOGIN */
+            SqlCommand cmdInserção = new SqlCommand($"insert into ultimologin(nome) values('{nomeSelecionado}');", con); // Comando para obter o nome do e-mail digitado
+            da = new SqlDataAdapter(cmdInserção);
+            da.Fill(ds, "FastFoodManager");
+
+            dt = ds.Tables["FastFoodManager"];
+            con.Close();
+            /* FIM DO CÓDIGO 2 */
+        }
+        #endregion
 
         #region Evento click no text box e-mail (para sumir o text pré definido)
         private void txbEmail_Click(object sender, EventArgs e)
@@ -52,6 +86,7 @@ namespace FastFoodManagement.View.Login
             {
                 if (controle.verificacao)
                 {
+                    GetNameLogin();
                     MessageBox.Show("Logado com sucesso!");
                     openChildForm(new frmSystemOptions());
                 }
@@ -65,7 +100,6 @@ namespace FastFoodManagement.View.Login
             {
                 MessageBox.Show(controle.mensagem);
             }
-                  
         }
         #endregion
 

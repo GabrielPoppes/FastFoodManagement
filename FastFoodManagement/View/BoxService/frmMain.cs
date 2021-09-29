@@ -21,7 +21,27 @@ namespace FastFoodManagement.View.BoxService
         public frmMain()
         {
             InitializeComponent();
+            GetNameUser();
         }
+
+        #region Obter nome do usuário logado
+        private void GetNameUser()
+        {
+            SqlDataAdapter da;
+            DataSet ds;
+            SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-715UFO0\SQLEXPRESS;Initial Catalog=FastFoodManager;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"); // Endereço do banco de dados
+            con.Open();
+
+            SqlCommand cmd = new SqlCommand($"SELECT nome FROM ultimologin WHERE id=(SELECT max(id) FROM ultimologin);", con); // Comando para obter o nome do e-mail digitado
+            da = new SqlDataAdapter(cmd);
+            ds = new DataSet();
+            DataTable dt = new DataTable();
+            da.Fill(ds, "FastFoodManager");
+            dt = ds.Tables["FastFoodManager"];
+            lblNomeUsuario.Text = dt.Rows[0].ItemArray[0].ToString();
+            /* FIM CÓDIGO 1 */
+        }
+        #endregion
 
         #region Evento Timer
         private void timer1_Tick(object sender, EventArgs e)
