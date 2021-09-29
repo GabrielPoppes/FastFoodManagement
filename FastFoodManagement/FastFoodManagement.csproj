@@ -47,6 +47,8 @@
   <ItemGroup>
     <Compile Include="DAL\CadastroFuncionarioDAL.cs" />
     <Compile Include="DAL\Conexao.cs" />
+    <Compile Include="DAL\LoginFuncionarioDAL.cs" />
+    <Compile Include="Models\Controle.cs" />
     <Compile Include="View\BoxService\Components\Widget.cs">
       <SubType>UserControl</SubType>
     </Compile>

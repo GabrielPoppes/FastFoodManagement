@@ -1,4 +1,5 @@
-﻿using FastFoodManagement.View.Registration;
+﻿using FastFoodManagement.Models;
+using FastFoodManagement.View.Registration;
 using FastFoodManagement.View.SystemOptions;
 using System;
 using System.Collections.Generic;
@@ -44,7 +45,27 @@ namespace FastFoodManagement.View.Login
         #region Botão entrar (abrindo a tela de opções após clicar em entrar)
         private void btnEntrar_Click(object sender, EventArgs e)
         {
-            openChildForm(new frmSystemOptions());        
+            Controle controle = new Controle();
+            controle.Acessar(txbEmail.Text, txbPassword.Text);
+
+            if (controle.mensagem.Equals(""))
+            {
+                if (controle.verificacao)
+                {
+                    MessageBox.Show("Logado com sucesso!");
+                    openChildForm(new frmSystemOptions());
+                }
+                else
+                {
+                    MessageBox.Show("Dados incorretos!");
+                }
+            }
+
+            else
+            {
+                MessageBox.Show(controle.mensagem);
+            }
+                  
         }
         #endregion
 

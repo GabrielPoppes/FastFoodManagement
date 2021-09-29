@@ -48,17 +48,7 @@ namespace FastFoodManagement.View.Registration
         #region Método do botão Cadastrar
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
-            CadastroFuncionarioDAL cadastrar = new CadastroFuncionarioDAL(txbEmail.Text, txbNome.Text, txtBoxCelular.Text, txbPassword.Text, txtBoxRepeatPassword.Text); // Passando os valores do text box
-            MessageBox.Show(cadastrar.mensagem);
-            LimparCampos(); // Limpar os campos (text box)
-        }
-        #endregion
-
-        
-        
-        #region Limpar todos os campos de entrada (text box)
-        public void LimparCampos()
-        {
+            // Condições antes de efetuar o cadastro
             if (txbEmail.Text != "" && txbNome.Text != "" && txtBoxCelular.Text != "" && txbPassword.Text != "" && txtBoxRepeatPassword.Text != "")
             {
                 if (txbPassword.Text == txtBoxRepeatPassword.Text)
@@ -70,15 +60,45 @@ namespace FastFoodManagement.View.Registration
                         Match match = regex.Match(txtBoxCelular.Text);
                         if (match.Success)
                         {
-                            txbNome.Clear();
-                            txbEmail.Clear();
-                            txtBoxCelular.Clear();
-                            txbPassword.Clear();
-                            txtBoxRepeatPassword.Clear();
+                            CadastroFuncionarioDAL cadastrar = new CadastroFuncionarioDAL(txbEmail.Text, txbNome.Text, txtBoxCelular.Text, txbPassword.Text, txtBoxRepeatPassword.Text); // Passando os valores do text box
+                            MessageBox.Show(cadastrar.mensagem);
+                            LimparCampos(); // Limpar os campos (text box)
+                        }
+
+                        else
+                        {
+                            MessageBox.Show("Por favor, digite um celular válido!");
                         }
                     }
+                    else
+                    {
+                        MessageBox.Show("E-mail inválido!");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Por favor, as senhas devem ser iguais!");
                 }
             }
+            else
+            {
+                MessageBox.Show("Por favor, preencha todos os campos!");
+            }
+        }
+        #endregion
+
+
+
+        #region Limpar todos os campos de entrada (text box)
+        public void LimparCampos()
+        {
+
+            txbNome.Clear();
+            txbEmail.Clear();
+            txtBoxCelular.Clear();
+            txbPassword.Clear();
+            txtBoxRepeatPassword.Clear();
+
         }
         #endregion
     }
