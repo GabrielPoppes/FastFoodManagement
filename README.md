@@ -11,10 +11,10 @@
 ![App 5](https://i.ibb.co/Dg33tVc/Captura-de-tela-29-09-2021-21-26-29.png)
 # Layout drinks
 ![App 5](https://i.ibb.co/dphG539/Captura-de-tela-29-09-2021-21-39-33.png)
-# Layout assembled order
-![App 5](https://i.ibb.co/yQgj8Mg/Captura-de-tela-29-09-2021-21-39-53.png)
 # Layout search
 ![App 8](https://i.ibb.co/10CvxsS/Captura-de-tela-29-09-2021-21-26-45.png)
+# Layout assembled order
+![App 5](https://i.ibb.co/yQgj8Mg/Captura-de-tela-29-09-2021-21-39-53.png)
 
 ## About this Project
 The purpose of the application is to demonstrate the initial idea of a program to run in cafeterias or restaurants. Where the attendant selects the order items, and when finished, the order is passed to the kitchen (all automated).
